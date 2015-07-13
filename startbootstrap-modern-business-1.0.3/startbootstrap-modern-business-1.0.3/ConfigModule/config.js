@@ -4,43 +4,35 @@ var recApp = angular.module('recApp', ['ngRoute']);
 recApp.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '../HomeModule/Home.html',
+            templateUrl: 'HomeModule/home.html',
+            controller: 'homeCtrl'
         })
-        .when('/Main/:committeeId:userId:first:last', {
-            templateUrl: '../MainModule/Main.html',
-            controller: 'MainController'
+        .when('/About', {
+            templateUrl: 'AboutUsModule/about.html',
+            controller: 'aboutCtrl'
         })
-        .when('/Calendar', {
-            templateUrl: '../CalendarModule/Calendar.html',
-            controller: 'caleController'
+        .when('/AllRecipes', {
+            templateUrl: 'AllRecipesModule/allRecipes.html',
+            controller: 'allRecipesCtrl'
         })
-        .when('/Team', {
-            templateUrl: '../TeamModule/Team.html',
-            controller: 'teamController'
+        .when('/Graphs', {
+            templateUrl: '../GraphModule/graph.html',
+            controller: 'graphCtrl'
         })
-        .when('/Forum', {
-            templateUrl: '../ForumModule/Forum.html',
-            controller: 'ForumController'
+        .when('/Login', {
+            templateUrl: '../LoginModule/login.html',
+            controller: 'loginCtrl'
         })
-        .when('/Users', {
-            templateUrl: '../HouseModule/Users/Users.html',
-            controller: 'UserController'
+        .when('/Register', {
+            templateUrl: '../RegisterModule/register.html',
+            controller: 'registerCtrl'
         })
-        .when('/Committee', {
-            templateUrl: '../CommitteeModule/CommitteeStatus.html',
-            controller: 'CommitteeStatusController'
+        .when('/Recipe', {
+            templateUrl: '../RecipeModule/recipe.html',
+            controller: 'recipeCtrl'
         })
-        .when('/Faults', {
-            templateUrl: '../HouseModule/Faults/Faults.html',
-            controller: 'FaultsController'
-        })
-        .when('/Posts/:postId', {
-            templateUrl: '../ForumModule/Post.html',
-            controller: 'PostController'
-        })
-        .when('/Suppliers', {
-            templateUrl: '../HouseModule/Suppliers/Suppliers.html',
-            controller: 'SupplierController'
+        .otherwise({
+            redirectTo: '../404Module/404.html'
         });
 
 });

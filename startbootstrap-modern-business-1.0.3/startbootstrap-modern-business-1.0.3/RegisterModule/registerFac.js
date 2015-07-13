@@ -1,4 +1,4 @@
-recApp.factory('loginService', function(){
+recApp.factory('registerService', function(){
      
     var fac = {};
      

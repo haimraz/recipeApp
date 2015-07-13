@@ -13,6 +13,7 @@
     <link href="Vendor/css/bootstrap.min.css" rel="stylesheet">
     <link href="Vendor/css/modern-business.css" rel="stylesheet">
     <link href="Vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="Vendor/css/angular-tooltips.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body data-ng-app="recApp">
@@ -27,24 +28,28 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Logo Pic</a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-ng-controller="menuCtrl">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li data-ng-repeat="item in menuItems">
+                        <a href="{{::item.href}}">{{::item.title}}</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-        <ng-view></ng-view>
-    <script src="Vendor/js/jquery.js"></script>
+    <ng-view></ng-view>
+    <script src="Vendor/js/jquery-1.11.3.min.js"></script>
     <script src="Vendor/js/bootstrap.min.js"></script>
     <script src="Vendor/js/angular.min.js"></script>
     <script src="Vendor/js/angular-route.js"></script>
+    <script src="Vendor/js/angular-tooltips.min.js"></script>
     <script src="ConfigModule/config.js"></script>
+    <script src="ConfigModule/MenuModule/menuCtrl.js"></script>
+    <script src="HomeModule/homeCtrl.js"></script>
+    <script src="LoginModule/loginCtrl.js"></script>
+    <script src="LoginModule/loginFac.js"></script>
+     <script src="RegisterModule/registerCtrl.js"></script>
+    <script src="RegisterModule/registerFac.js"></script>
 </body>
 
 </html>

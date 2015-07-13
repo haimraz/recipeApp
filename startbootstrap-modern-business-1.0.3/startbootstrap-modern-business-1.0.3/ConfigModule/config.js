@@ -1,7 +1,8 @@
-var recApp = angular.module('recApp', ['ngRoute']);
+var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips']);
 
 // configure our routes
-recApp.config(function ($routeProvider) {
+recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $compileProvider) {
+    $compileProvider.debugInfoEnabled(false);
     $routeProvider
         .when('/', {
             templateUrl: 'HomeModule/home.html',
@@ -20,19 +21,18 @@ recApp.config(function ($routeProvider) {
             controller: 'graphCtrl'
         })
         .when('/Login', {
-            templateUrl: '../LoginModule/login.html',
+            templateUrl: 'LoginModule/login.html',
             controller: 'loginCtrl'
         })
         .when('/Register', {
-            templateUrl: '../RegisterModule/register.html',
+            templateUrl: 'RegisterModule/register.html',
             controller: 'registerCtrl'
         })
         .when('/Recipe', {
-            templateUrl: '../RecipeModule/recipe.html',
+            templateUrl: 'RecipeModule/recipe.html',
             controller: 'recipeCtrl'
         })
         .otherwise({
             redirectTo: '../404Module/404.html'
         });
-
-});
+}]);

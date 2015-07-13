@@ -1,0 +1,18 @@
+var express = require('express');
+var app = express();
+
+var mongoClient = require('mongodb').mongoClient,
+	assert = require('assert');
+
+var connectionUrl = 'ds047722.mongolab.com:47722';
+var dbInstane;
+
+mongoClient.connect(url, function(err,db)
+{
+	//log prints
+	assert.equal(null, err);
+	console.log("Connected successfuly");
+
+	// Setting the db object
+	dbInstane = db;
+})

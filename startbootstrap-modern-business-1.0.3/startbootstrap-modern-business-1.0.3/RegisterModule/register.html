@@ -5,21 +5,33 @@
                 <h1 class="text-center">Register</h1>
             </div>
             <div class="modal-body">
-                <form name="loginForm" class="form col-md-12 center-block" data-ng-submit="submitForm(loginForm.$valid)" novalidate>
-                    <div class="form-group" data-ng-class="{ 'has-error' : loginForm.username.$invalid && !loginForm.username.$pristine }">
+                <form name="regForm" class="form col-md-12 center-block" data-ng-submit="submitForm(regForm.$valid)" novalidate>
+                    <div class="form-group" data-ng-class="{ 'has-error' : regForm.username.$invalid && !regForm.username.$pristine }">
+                        <label>Username</label>
                         <input type="text" name="username" data-ng-model="user.username" class="form-control input-lg" placeholder="Username" data-ng-minlength="3" data-ng-maxlength="8" required>
-                        <p data-ng-show="loginForm.username.$invalid && !loginForm.username.$pristine" class="help-block">Username is required.</p>
-                        <p data-ng-show="loginForm.username.$error.minlength" class="help-block">Username is too short.</p>
-                        <p data-ng-show="loginForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+                        <p data-ng-show="regForm.username.$invalid && !regForm.username.$pristine" class="help-block">Username is required.</p>
+                        <p data-ng-show="regForm.username.$error.minlength" class="help-block">Username is too short.</p>
+                        <p data-ng-show="regForm.username.$error.maxlength" class="help-block">Username is too long.</p>
                     </div>
-                    <div class="form-group" data-ng-class="{ 'has-error' : loginForm.password.$invalid && !loginForm.password.$pristine }">
+                    <div class="form-group" data-ng-class="{ 'has-error' : regForm.password.$invalid && !regForm.password.$pristine }">
+                        <label>Password</label>
                         <input type="password" name="password" data-ng-model="user.password" class="form-control input-lg" placeholder="Password" data-ng-minlength="5" data-ng-maxlength="10" required>
-                        <p data-ng-show="loginForm.password.$invalid && !loginForm.password.$pristine" class="help-block">Password is required.</p>
-                        <p data-ng-show="loginForm.password.$error.minlength" class="help-block">Password is too short.</p>
-                        <p data-ng-show="loginForm.password.$error.maxlength" class="help-block">Password is too long.</p>
+                        <p data-ng-show="regForm.password.$invalid && !regForm.password.$pristine" class="help-block">Password is required.</p>
+                        <p data-ng-show="regForm.password.$error.minlength" class="help-block">Password is too short.</p>
+                        <p data-ng-show="regForm.password.$error.maxlength" class="help-block">Password is too long.</p>
+                    </div>
+                    <div class="form-group" data-ng-class="{ 'has-error' : regForm.email.$invalid && !regForm.email.$pristine }">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control input-lg" data-ng-model="user.email" placeholder="Email">
+                        <p data-ng-show="regForm.email.$invalid && !regForm.email.$pristine" class="help-block">Enter a valid email.</p>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" data-ng-disabled="loginForm.$invalid">Sign Up</button>
+                        <label>Address</label>
+                        <place-directive user.address=address></place-directive>
+                         <p data-ng-show="regForm.address.$invalid && !regForm.address.$pristine" class="help-block">Address is required.</p>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" data-ng-disabled="regForm.$invalid">Sign Up</button>
                         <span class="pull-right"><a href="#Login">Login</a></span><span><a href="" tooltips="" tooltip-title="You have to enter all the fields" tooltip-side="bottom">Need help?</a></span>
                     </div>
                 </form>

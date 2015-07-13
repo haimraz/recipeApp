@@ -10,13 +10,12 @@
     <meta name="author" content="Our Team">
 
     <title>Recipe Application</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../Vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Vendor/css/modern-business.css" rel="stylesheet">
+    <link href="../Vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-
+<body data-ng-app="recApp">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -131,17 +130,17 @@
             </div>
         </div>
         <!-- /.row -->
-
     </div>
     <!-- /.container -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/angular.min.js"></script>
+    <script src="../Vendor/js/jquery.js"></script>
+    <script src="../Vendor/js/bootstrap.min.js"></script>
+    <script src="../Vendor/js/angular.min.js"></script>
+      <script src="../Vendor/js/angular-route.js"></script>
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
     </script>
 
 </body>

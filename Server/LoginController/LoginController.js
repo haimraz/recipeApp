@@ -4,36 +4,34 @@ var hash = require('./passEncryption').hash;
 var bodyParser = require('body-parser');  
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
+var mongoose = require("mongoose");
 
 var User = require('../Models/User');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-var app = express();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+var app = express();  
      
 
-// config                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-app.set('view engine', 'ejs');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-app.set('views', __dirname + '/views');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+// config                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 // middleware                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-//app.use(express.bodyParser());  
+
 app.use(bodyParser.json());                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 app.use(cookieParser());                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
-// app.use(session({
+app.use(session({
 
-//   genid: function(req) {
-//     return guid(); // use UUIDs for session IDs 
-//   },
-//   secret: 'asavadv'
+  genid: function(req) {
+    return guid(); // use UUIDs for session IDs 
+  },
+  secret: 'asavadv'
 
-// }
-// ));
+}
+));
 
 app.use(function(req,res,next) {
 	console.log("Request.url: ", req.originalUrl);
 	console.log("==================Got request body: ");
 	console.log(req.body);
+	console.log("Method: ", req.method);
 	next();
 });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
@@ -67,29 +65,34 @@ function authenticate(name, pass, fn) {
   if (!module.parent) 
   	console.log('authenticating %s:%s', name, pass);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
   
-	var userFromDatabase = User.find({ username: name }, function(err, user) {
+	User.find({ username: name }, function(err, userFromDatabase) {
   							if (err) 
   								{
   									return null;
-  								};
-  							return user;});
+  								}
+  								else if (userFromDatabase != null)
+							  	{
+  									console.log("Got user: ", userFromDatabase);
+							  		
+							  		hash(pass, userFromDatabase[0].salt.toString(), function(err, hash){
+							  		console.log("Got hash: ", hash.toString('hex'));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+								    
+								    if (err) 
+								    	return fn(err);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+								    
+								    if (hash.toString() == userFromDatabase[0].hash) 
+								    	return fn(null, userFromDatabase[0]); 
 
-  	if (userFromDatabase != null)
-  	{
-  		
-  		hash(pass, userFromDatabase.salt, function(err, hash){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-	    if (err) 
-	    	return fn(err);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-	    if (hash.toString() == user.hash) 
-	    	return fn(null, userFromDatabase); 
+								    fn(new Error('invalid password'));
+							  		});
+							  	}
+								else
+								{ 
+							  		return fn(new Error('cannot find user'));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+							  	}
+		});
 
-	    fn(new Error('invalid password'));
-  		});
-  	}
-	else
-	{ 
-  		return fn(new Error('cannot find user'));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-  	}
+  	
   }
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
@@ -116,59 +119,71 @@ app.get('/logout', function(req, res){
   });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-app.get('/login', function(req, res){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+app.get('/login', function(req, res){  
+console.log("Got req: "+req.originalUrl+", method: "+req.method);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
   res.render('login');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 app.post('/login', function(req, res){
   authenticate(req.body.username, req.body.password, function(err, user){                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-    if (user) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-      // Regenerate session when signing in                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-      // to prevent fixation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-      req.session.regenerate(function(){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    var jsonResult;
+
+    if (user) 
+    {  
+    	jsonResult = {"exit_code": 1, "message":""};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        
+        // Regenerate session when signing in                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        // to prevent fixation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        req.session.regenerate(function(){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        
         // Store the user's primary key                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
         // in the session store to be retrieved,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         // or in this case the entire user object                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-        req.session.user = user._id;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        req.session.user = user._id; 
+        res.end(JSON.stringify(jsonResult));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
       });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-    } else {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-      req.session.error = 'Authentication failed, please check your '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-        + ' username and password.'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-      res.redirect('login');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    } 
+    else 
+    {  
+    	var jsonResult = {"exit_code": 0, "message": err};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+      	req.session.error = 'Authentication failed. ' + err;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        console.log("We're in here, there was an error in authenticating the user");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        res.end(JSON.stringify(jsonResult));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
   });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 });       
 
-app.post('/signin', function(req, res){
-
-	var userFromDatabase = User.find({ username: req.body.username }, function(err, user) {
+app.post('/signup', function(req, res){
+	User.find({ username: req.body.username }, function(err, userFromDatabase) {
+  							
   							if (err) 
   								{
+  									console.log("Got user: ", err);
   									return null;
   								};
-  							return user;});
 
-  	if (userFromDatabase == null)
-	{
-	  	hash( req.body.password, function(err, salt, hash){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-	    
-		    var randomSalt = Math.floor(Math.random() * 9000) + 1000;
+  							if (userFromDatabase == null)
+							{
+								console.log("Got user: ", userFromDatabase);
+								var randomSalt = Math.floor(Math.random() * 9000) + 1000;
+							  	hash(req.body.password, randomSalt.toString() ,function(err, hash){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
-		    var newUser =  new User({
-				 _id : mongoose.Types.ObjectId(),
-				  username : req.body.username,
-				  password : hash,
-				  creation_date : Date.now,
-				  email : req.body.email,
-				  address: req.body.address,
-				  salt : randomSalt
-				});  
+								    var newUser =  new User({
+										 _id : mongoose.Types.ObjectId(),
+										  username : req.body.username,
+										  password : hash,
+										  creation_date : Date.now,
+										  email : req.body.email,
+										  address: req.body.address,
+										  salt : randomSalt
+										});  
 
-			newUser.save(function(err) {
-			  	if (err) throw err;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-				});
-		});
-	}
+									newUser.save(function(err) {
+									  	if (err) throw err;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+										});
+								});
+							}});
+  	
 });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
                           
 

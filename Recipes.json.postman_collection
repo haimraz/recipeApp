@@ -1,35 +1,39 @@
 {
-	"id": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
+	"id": "f636a1d2-37f8-0915-b46c-10e79ee5e90c",
 	"name": "Recipes",
 	"description": "",
 	"order": [],
 	"folders": [
 		{
-			"id": "3fadbbd1-eb52-bce7-95ff-618ace903cb5",
+			"id": "b7234b4e-e1e6-098b-59e0-e0e0f8f94edb",
 			"name": "Recipes",
 			"description": "",
 			"write": true,
 			"order": [
-				"3d2b3d60-b014-317a-cedd-5e92c7a500ea",
-				"75b0e239-eade-dda0-3b5d-2cefb907775e"
+				"96dec781-28ef-2795-cb49-5a41c5dbfeee",
+				"d4b2569e-a668-0884-ee80-7d57e6ff1e0d"
 			],
 			"collection": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
 			"owner": 0,
 			"collection_name": "Recipes",
 			"collection_owner": 0,
-			"collection_id": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719"
+			"collection_id": "f636a1d2-37f8-0915-b46c-10e79ee5e90c"
 		},
 		{
-			"id": "851e9f1e-b783-d810-695c-a8f9cdfa0be8",
+			"id": "08999d70-487d-7f06-4c85-6218cb5deaf2",
 			"name": "Users",
 			"description": "",
 			"write": true,
-			"order": [],
+			"order": [
+				"57ee1ce7-ad73-015d-33ae-c92453af0688",
+				"15767e80-60e7-f00f-5b1a-833784b2d495",
+				"3a874a7e-863e-b722-218a-57ae49fe5743"
+			],
 			"collection": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
 			"owner": 0,
 			"collection_name": "Recipes",
 			"collection_owner": 0,
-			"collection_id": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719"
+			"collection_id": "f636a1d2-37f8-0915-b46c-10e79ee5e90c"
 		}
 	],
 	"timestamp": 1436973777774,
@@ -38,36 +42,96 @@
 	"public": false,
 	"requests": [
 		{
-			"id": "3d2b3d60-b014-317a-cedd-5e92c7a500ea",
-			"headers": "X-App-Token: {{APP_TOKEN}}\nX-App-Version: {{APP_VERSION}}\nAccept-Language: {{LANG}}\nAuthorization: {{AUTH_ACCOUNT}}\nX-Timestamp: {{TIMESTAMP}}\nX-Authorization-Version: {{AUTH_VERSION}}\nX-Consumer-Key: {{CONSUMER_KEY}}\nContent-Type: {{JSON}}\nX-Server-Version: {{SERVER_VERSION}}\n",
-			"url": "localhost:80\\getAllRecipes",
+			"id": "15767e80-60e7-f00f-5b1a-833784b2d495",
+			"headers": "username: haskjdh\nContent-Type: application/json\n",
+			"url": "localhost:80\\signup",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1436892655042,
+			"name": "Signup",
+			"description": "",
+			"collectionId": "f636a1d2-37f8-0915-b46c-10e79ee5e90c",
+			"responses": [],
+			"folder": "08999d70-487d-7f06-4c85-6218cb5deaf2",
+			"rawModeData": "{\n    \"username\":\"haimraitz\",\n    \"password\":\"2323232\",\n    \"email\" : \"haimraitsev@gmail.com\",\n    \"address\" : \"hatzor 3, bat yam\"\n}"
+		},
+		{
+			"id": "3a874a7e-863e-b722-218a-57ae49fe5743",
+			"headers": "username: litalku14\n",
+			"url": "localhost:80/LoginController/checkIfUserExist/litalku14",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
-			"collectionId": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
+			"collectionId": "f636a1d2-37f8-0915-b46c-10e79ee5e90c",
 			"data": [],
-			"dataMode": "params",
-			"name": "GetAll",
+			"dataMode": "raw",
+			"name": "Check If User Exist",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1436973899023,
+			"time": 1436977394809,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"isFromCollection": true,
-			"collectionRequestId": "3d2b3d60-b014-317a-cedd-5e92c7a500ea",
-			"folder": "3fadbbd1-eb52-bce7-95ff-618ace903cb5"
+			"folder": "08999d70-487d-7f06-4c85-6218cb5deaf2",
+			"rawModeData": ""
 		},
 		{
-			"id": "75b0e239-eade-dda0-3b5d-2cefb907775e",
+			"id": "57ee1ce7-ad73-015d-33ae-c92453af0688",
+			"headers": "username: haskjdh\nContent-Type: application/json\n",
+			"url": "localhost:80\\login",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1436892644939,
+			"name": "Login",
+			"description": "",
+			"collectionId": "f636a1d2-37f8-0915-b46c-10e79ee5e90c",
+			"responses": [],
+			"folder": "08999d70-487d-7f06-4c85-6218cb5deaf2",
+			"rawModeData": "{\n    \"username\":\"litalk\",\n    \"password\":\"1234567\"\n}"
+		},
+		{
+			"id": "96dec781-28ef-2795-cb49-5a41c5dbfeee",
+			"headers": "X-App-Token: {{APP_TOKEN}}\nX-App-Version: {{APP_VERSION}}\nAccept-Language: {{LANG}}\nAuthorization: {{AUTH_ACCOUNT}}\nX-Timestamp: {{TIMESTAMP}}\nX-Authorization-Version: {{AUTH_VERSION}}\nX-Consumer-Key: {{CONSUMER_KEY}}\nContent-Type: {{JSON}}\nX-Server-Version: {{SERVER_VERSION}}\n",
+			"url": "localhost:80\\RecipeController\\getAllRecipes",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1436980017844,
+			"name": "GetAll",
+			"description": "",
+			"collectionId": "f636a1d2-37f8-0915-b46c-10e79ee5e90c",
+			"responses": []
+		},
+		{
+			"id": "d4b2569e-a668-0884-ee80-7d57e6ff1e0d",
 			"headers": "X-App-Token: {{APP_TOKEN}}\nX-App-Version: {{APP_VERSION}}\nAccept-Language: {{LANG}}\nAuthorization: {{AUTH_ACCOUNT}}\nX-Timestamp: {{TIMESTAMP}}\nX-Authorization-Version: {{AUTH_VERSION}}\nX-Consumer-Key: {{CONSUMER_KEY}}\nContent-Type: {{JSON}}\nX-Server-Version: {{SERVER_VERSION}}\n",
 			"url": "localhost:80\\getAllRecipes",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
-			"collectionId": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
+			"collectionId": "f636a1d2-37f8-0915-b46c-10e79ee5e90c",
 			"data": [],
 			"dataMode": "params",
 			"name": "GetById",
@@ -80,8 +144,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"isFromCollection": true,
-			"collectionRequestId": "3d2b3d60-b014-317a-cedd-5e92c7a500ea",
-			"folder": "3fadbbd1-eb52-bce7-95ff-618ace903cb5"
+			"folder": "b7234b4e-e1e6-098b-59e0-e0e0f8f94edb"
 		}
 	]
 }

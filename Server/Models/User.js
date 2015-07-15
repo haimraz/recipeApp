@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var validator = require("email-validator");
 var Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
+//mongoose.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
 // create a schema
 var userSchema = new Schema({

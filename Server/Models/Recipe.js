@@ -6,7 +6,7 @@ mongoose.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
 // create a schema
 var recipeSchema = new Schema({
-  _id: { type: String, required: true, unique: true , index : true},
+  //_id: { type: ObjectId, required: true, unique: true , index : true},
   category: { type: String, required: true},
   ingredients: { type: String, required: true },
   directions: { type: String, required: true},

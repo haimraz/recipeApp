@@ -7,7 +7,7 @@ mongoose.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
 // create a schema
 var userSchema = new Schema({
-  _id: { type: String, required: true, unique: true , index : true},
+  //_id: { type: String, required: true, unique: true , index : true},
   username: { type: String, required: true, unique: true, validate : [ UsernameValidator , "The username minimal length is 8 characters" ]},
   password: { type: String, required: true },
   email: { type: String, required: true, validate : [emailValidator, "The email you enterd is invalid"]},

@@ -12,15 +12,27 @@ var app = express();
 
 app.get('/getAllRecipes', function(req, res)
 {
-    console.log("Got req: "+ req.originalUrl +", method: "+req.method);
-
     Recipe.find({}, function(err, recipesFromDB) {
         if (!err){
-            console.log(recipesFromDB);
             res.end(JSON.stringify(recipesFromDB));
         }
         else {
-            console.log(err);
+            generateResponse(req, res, 0, err);
+        }
+    });
+});
+
+app.get('/getRecipeById/:id', function(req, res)
+{
+    console.log(req.params.id);
+    var id = mongoose.Types.ObjectId(req.params.id);
+    console.log(id);
+    Recipe.findById(id, function(err, recipeFromDB) {
+        if (!err){
+            console.log(recipeFromDB);
+            res.end(JSON.stringify(recipeFromDB));
+        }
+        else {
             generateResponse(req, res, 0, err);
         }
     });

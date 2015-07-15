@@ -27,7 +27,8 @@
 			"order": [
 				"57ee1ce7-ad73-015d-33ae-c92453af0688",
 				"15767e80-60e7-f00f-5b1a-833784b2d495",
-				"3a874a7e-863e-b722-218a-57ae49fe5743"
+				"3a874a7e-863e-b722-218a-57ae49fe5743",
+				"707abb1a-a01d-edef-c2be-e319a0514748"
 			],
 			"collection": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
 			"owner": 0,
@@ -104,6 +105,28 @@
 			"responses": [],
 			"folder": "08999d70-487d-7f06-4c85-6218cb5deaf2",
 			"rawModeData": "{\n    \"username\":\"litalk\",\n    \"password\":\"1234567\"\n}"
+		},
+		{
+			"id": "707abb1a-a01d-edef-c2be-e319a0514748",
+			"headers": "username: litalku14\n",
+			"url": "localhost:80/LoginController/checkIfUserExist/litalku14",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "f636a1d2-37f8-0915-b46c-10e79ee5e90c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Check If User Exist copy",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1436977394809,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "08999d70-487d-7f06-4c85-6218cb5deaf2",
+			"rawModeData": ""
 		},
 		{
 			"id": "96dec781-28ef-2795-cb49-5a41c5dbfeee",

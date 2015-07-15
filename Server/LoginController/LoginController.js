@@ -103,7 +103,7 @@ function restrict(req, res, next)
   }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 }    
 
-
+/*
 app.get('/restricted', restrict, function(req, res)
 {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
   res.send('Wahoo! restricted area, click to <a href="/logout">logout</a>');                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
@@ -123,11 +123,11 @@ app.get('/login', function(req, res)
 	console.log("Got req: "+req.originalUrl+", method: "+req.method);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
   	res.render('login');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-app.post('/login', function(req, res)
+     */            
+exports.login = function(req, res)
 {
   authenticate(req.body.username, req.body.password, function(err, user)
-  {        
+  	{        
 	    if (user) 
 	    {                 
 	        // Regenerate session when signing in                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
@@ -143,14 +143,15 @@ app.post('/login', function(req, res)
 	    else 
 	    {  
 	    	generateResponse(req, res, 0, err);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-	    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-  });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-});       
-
-app.post('/signup', function(req, res)
+	    }
+	});
+};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+     
+exports.signup = function(req,res)
 {
 	User.find({ username: req.body.username }, function(err, userFromDatabase) 
 	{
+		console.log(req.body);
 		var jsonResult;
 		
 		if (err != null) 
@@ -196,9 +197,8 @@ app.post('/signup', function(req, res)
 		else
 			generateResponse(req, res, 0, "username already exist");
 	});
-});
+};
 
- 
  function generateResponse(req, res, exitCode, message)
  {
  	var jsonResult = {"exit_code" : exitCode, "message" : message};
@@ -211,10 +211,10 @@ app.post('/signup', function(req, res)
 	}   
  }
 
- 
-app.get('/checkIfUserExist', function(req, res)
+exports.checkIfUserExist = function(req,res)
 {
-	var name = req.param('username');
+	var name = req.params.username;
+	console.log(name);
  	User.find({ username: name }, function(err, userFromDatabase)
 	 	{
 	 		if (err) 
@@ -230,7 +230,8 @@ app.get('/checkIfUserExist', function(req, res)
 				generateResponse(req, res, 0, 'cannot find user');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 		  	}
 	 	});
- });                   
+};
+                   
 
  function guid() 
  {
@@ -245,5 +246,3 @@ app.get('/checkIfUserExist', function(req, res)
 	    s4() + '-' + s4() + s4() + s4();
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-app.listen(80);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-console.log('Express started on port ' + 80); 

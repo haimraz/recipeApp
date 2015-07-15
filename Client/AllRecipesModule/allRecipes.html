@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">All Recipes
+                </h1>
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4" style="padding-right:0px">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" />
+        </div>
+        <div class="col-xs-8" style="padding-left:0px">
+            <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+            <small-recipe-directive data-ng-repeat="recipe in recipes" recipe=recipe></small-recipe-directive>
+    </div>
+    <hr>
+</div>

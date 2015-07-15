@@ -1,8 +1,8 @@
-var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule']);
+var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule']);
 
 // configure our routes
 recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $compileProvider) {
-    $compileProvider.debugInfoEnabled(true);
+    $compileProvider.debugInfoEnabled(false);
     $routeProvider
         .when('/', {
             templateUrl: 'HomeModule/home.html',

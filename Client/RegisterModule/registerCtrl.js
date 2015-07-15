@@ -1,5 +1,5 @@
 recApp.controller('registerCtrl', ['$scope', 'registerService', function ($scope, registerService) {
-//    $scope.user = new Object();
+    $scope.user = {};
 //    $scope.user.address="";
     $scope.submitForm = function (isValid) {
 

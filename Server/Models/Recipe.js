@@ -4,6 +4,14 @@ var Schema = mongoose.Schema;
 
 mongoose.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
+var commentSchema = new Schema({
+  _id: String
+  ,content: String
+  ,creation_date: Date
+  ,creating_user: String
+  ,title: String
+});
+
 // create a schema
 var recipeSchema = new Schema({
   //_id: { type: ObjectId, required: true, unique: true , index : true},
@@ -15,7 +23,7 @@ var recipeSchema = new Schema({
   cuisine : {type: String, required: true},
   picture_path : {type: String, required: true},
   difficulty : {type : Number},
-  comments: [{ id: String, content: String, creating_date: Date, creating_user: String, title: String }]
+  comments: [commentSchema]
 });
 
 // the schema is useless so far

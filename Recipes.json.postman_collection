@@ -1,0 +1,87 @@
+{
+	"id": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
+	"name": "Recipes",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "3fadbbd1-eb52-bce7-95ff-618ace903cb5",
+			"name": "Recipes",
+			"description": "",
+			"write": true,
+			"order": [
+				"3d2b3d60-b014-317a-cedd-5e92c7a500ea",
+				"75b0e239-eade-dda0-3b5d-2cefb907775e"
+			],
+			"collection": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
+			"owner": 0,
+			"collection_name": "Recipes",
+			"collection_owner": 0,
+			"collection_id": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719"
+		},
+		{
+			"id": "851e9f1e-b783-d810-695c-a8f9cdfa0be8",
+			"name": "Users",
+			"description": "",
+			"write": true,
+			"order": [],
+			"collection": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
+			"owner": 0,
+			"collection_name": "Recipes",
+			"collection_owner": 0,
+			"collection_id": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719"
+		}
+	],
+	"timestamp": 1436973777774,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "3d2b3d60-b014-317a-cedd-5e92c7a500ea",
+			"headers": "X-App-Token: {{APP_TOKEN}}\nX-App-Version: {{APP_VERSION}}\nAccept-Language: {{LANG}}\nAuthorization: {{AUTH_ACCOUNT}}\nX-Timestamp: {{TIMESTAMP}}\nX-Authorization-Version: {{AUTH_VERSION}}\nX-Consumer-Key: {{CONSUMER_KEY}}\nContent-Type: {{JSON}}\nX-Server-Version: {{SERVER_VERSION}}\n",
+			"url": "localhost:80\\getAllRecipes",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
+			"data": [],
+			"dataMode": "params",
+			"name": "GetAll",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1436973899023,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "3d2b3d60-b014-317a-cedd-5e92c7a500ea",
+			"folder": "3fadbbd1-eb52-bce7-95ff-618ace903cb5"
+		},
+		{
+			"id": "75b0e239-eade-dda0-3b5d-2cefb907775e",
+			"headers": "X-App-Token: {{APP_TOKEN}}\nX-App-Version: {{APP_VERSION}}\nAccept-Language: {{LANG}}\nAuthorization: {{AUTH_ACCOUNT}}\nX-Timestamp: {{TIMESTAMP}}\nX-Authorization-Version: {{AUTH_VERSION}}\nX-Consumer-Key: {{CONSUMER_KEY}}\nContent-Type: {{JSON}}\nX-Server-Version: {{SERVER_VERSION}}\n",
+			"url": "localhost:80\\getAllRecipes",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
+			"data": [],
+			"dataMode": "params",
+			"name": "GetById",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1436973899023,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "3d2b3d60-b014-317a-cedd-5e92c7a500ea",
+			"folder": "3fadbbd1-eb52-bce7-95ff-618ace903cb5"
+		}
+	]
+}

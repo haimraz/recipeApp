@@ -3,6 +3,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 //var methodOverride = require('method-override');
 var loginController = require('./LoginController/LoginController');
+var recipeController = require('./RecipeController/RecipeController');
 
 var app = express();
 module.exports = app;
@@ -30,6 +31,9 @@ app.post('/LoginController/login', loginController.login);
 app.post('/LoginController/signup', loginController.signup);
 app.get('/LoginController/checkIfUserExist/:username', loginController.checkIfUserExist);
 
+// Recepies controller
+app.get('/RecipeController/getAllRecipes', recipeController.getAllRecipes);
+app.get('/RecipeController/getRecipeById/:id', recipeController.getRecipeById);
 
 // posts
 

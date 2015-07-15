@@ -10,7 +10,8 @@ var mongoose = require("mongoose");
 var Recipe = require('../Models/Recipe');
 var app = express();
 
-app.get('/getAllRecipes', function(req, res)
+
+exports.getAllRecipes = function(req,res)
 {
     Recipe.find({}, function(err, recipesFromDB) {
         if (!err){
@@ -20,9 +21,9 @@ app.get('/getAllRecipes', function(req, res)
             generateResponse(req, res, 0, err);
         }
     });
-});
+};
 
-app.get('/getRecipeById/:id', function(req, res)
+exports.getRecipeById = function(req,res)
 {
     console.log(req.params.id);
     var id = mongoose.Types.ObjectId(req.params.id);
@@ -36,7 +37,7 @@ app.get('/getRecipeById/:id', function(req, res)
             generateResponse(req, res, 0, err);
         }
     });
-});
+};
 
 
 function generateResponse(req, res, exitCode, message)
@@ -50,6 +51,3 @@ function generateResponse(req, res, exitCode, message)
         console.log(message);
     }
 }
-
-app.listen(80);
-console.log('Express started on port ' + 80);

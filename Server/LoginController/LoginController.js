@@ -153,39 +153,69 @@ app.post('/login', function(req, res){
   });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 });       
 
-app.post('/signup', function(req, res){
-	User.find({ username: req.body.username }, function(err, userFromDatabase) {
-  							
-  							if (err) 
-  								{
-  									console.log("Got user: ", err);
-  									return null;
-  								};
+app.post('/signup', function(req, res)
+{
+	User.find({ username: req.body.username }, function(err, userFromDatabase) 
+	{
+		var jsonResult;
+		
+		if (err != null) 
+		{
+			generateResponse(req, res, 0, err);
+		}
+		else if (userFromDatabase[0] == null)
+		{
+			if ((req.body.password.length() < 11) && (req.body.password.length() > 4 ))
+			{
+				console.log("Got user: ", userFromDatabase);
+				var randomSalt = Math.floor(Math.random() * 9000) + 1000;
 
-  							if (userFromDatabase == null)
-							{
-								console.log("Got user: ", userFromDatabase);
-								var randomSalt = Math.floor(Math.random() * 9000) + 1000;
-							  	hash(req.body.password, randomSalt.toString() ,function(err, hash){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+			  	hash(req.body.password, randomSalt.toString() ,function(err, hash)
+			  	{
+				    var newUser =  new User({
+											 _id : mongoose.Types.ObjectId(),
+											  username : req.body.username,
+											  password : hash.toString('hex'),
+											  creation_date : new Date,
+											  email : req.body.email,
+											  address: req.body.address,
+											  salt : randomSalt
+											});
+					
+					newUser.save(function(err) 
+					{
+					  	if (err)
+					  	{
+					  		generateResponse(req, res, 0, err);
+					  	 	console.log(err);
+					  	} 
+					  	else
+					  	{
+					  	 	generateResponse(req, res, 1, "");
+					  	}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+					});
+				});
+			}
+			else
+				generateResponse(req, res, 0, "invalid password length. length should be between 5-10 characters");
+		}
+		else
+			generateResponse(req, res, 0, "username already exist");
+	});
+});
 
-								    var newUser =  new User({
-										 _id : mongoose.Types.ObjectId(),
-										  username : req.body.username,
-										  password : hash,
-										  creation_date : Date.now,
-										  email : req.body.email,
-										  address: req.body.address,
-										  salt : randomSalt
-										});  
+ 
+ function generateResponse(req, res, exitCode, message)
+ {
+ 	var jsonResult = {"exit_code" : exitCode, "message" : message};
+	res.end(JSON.stringify(jsonResult));
 
-									newUser.save(function(err) {
-									  	if (err) throw err;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-										});
-								});
-							}});
-  	
-});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-                          
+	if (exitCode == 0)
+	{
+		req.session.error = message;
+		console.log(message);
+	}   
+ }                   
 
  function guid() {
   function s4() {

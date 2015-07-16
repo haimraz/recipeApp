@@ -1,92 +1,48 @@
-// grab the user model
-var express = require('express');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+// Requiers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 var hash = require('./passEncryption').hash;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-var bodyParser = require('body-parser');  
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var mongoose = require("mongoose");
-
 var User = require('../Models/User');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-var app = express();  
      
 
-// config                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-// middleware                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-
-app.use(bodyParser.json());                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-app.use(cookieParser());                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-
-app.use(session(
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+function authenticate(name, pass, fn) 
+{   
+	// Looking for user with the same username
+	User.find({ username: name }, function(err, userFromDatabase) 
 	{
-	  genid: function(req) 
-		  {
-		    return guid(); // use UUIDs for session IDs 
-		  },
-	  secret: 'asavadv'
-	}
-));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-// Session-persisted message middleware                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-// app.use(function(req, res, next){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-//   var err = req.session.error                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-//     , msg = req.session.success;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-//   delete req.session.error;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-//   delete req.session.success;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-//   next();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-// });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-// dummy database                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-// when you create a user, generate a salt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-// and hash the password ('foobar' is the pass here)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-// hash('foobar', function(err, salt, hash){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-//   if (err) throw err;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-//   // store the salt & hash in the "db"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-//   users.tj.salt = salt;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-//   users.tj.hash = hash.toString();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-// });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-// Authenticate using our plain-object database of doom!                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-function authenticate(name, pass, fn) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-  if (!module.parent) 
-  	console.log('authenticating %s:%s', name, pass);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-  
-	User.find({ username: name }, function(err, userFromDatabase) {
   							if (err) 
-  								{
-  									return null;
-  								}
-  								else if (userFromDatabase[0] != null)
-							  	{
-  									console.log("Got user: ", userFromDatabase);
-							  		
-							  		hash(pass, userFromDatabase[0].salt.toString(), function(err, hash){
-							  		console.log("Got hash: ", hash.toString('hex'));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-								    
+							{
+								return null;
+							}
+							// Query succeeded
+							else if (userFromDatabase[0] != null)
+						  	{
+						  		// Hash the entered password
+						  		hash(pass, userFromDatabase[0].salt.toString(), function(err, hash)
+						  		{
+						  			// In case of error
 								    if (err) 
+								    {
+								    	console.log("failed");
 								    	return fn(err);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-								    
-								    if (hash.toString() == userFromDatabase[0].hash) 
+								    }
+				    
+				    				// Check if the hash from database and the entered password hash are equal
+								    if (hash.toString('hex') == userFromDatabase[0].password) 
+								    {
 								    	return fn(null, userFromDatabase[0]); 
+									}
 
+									// The entered password is invalid
 								    fn(new Error('invalid password'));
-							  		});
-							  	}
-								else
-								{ 
-							  		return fn(new Error('cannot find user'));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-							  	}
+						  		});
+						  	}
+						  	// The user is not exist
+							else
+							{ 
+						  		return fn(new Error('cannot find user'));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+						  	}
 		});
-
-  	
-  }
+  };
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
@@ -101,7 +57,7 @@ function restrict(req, res, next)
     req.session.error = 'Access denied!';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     res.redirect('/login');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
   }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-}    
+};
 
 /*
 app.get('/restricted', restrict, function(req, res)
@@ -117,18 +73,15 @@ app.get('/logout', function(req, res)
     res.redirect('/');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
   });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-app.get('/login', function(req, res)
-{  
-	console.log("Got req: "+req.originalUrl+", method: "+req.method);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-  	res.render('login');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
      */            
+
 exports.login = function(req, res)
 {
+	console.log("BEFORE AUTH", req.body.username);
+
   authenticate(req.body.username, req.body.password, function(err, user)
-  	{        
-	    if (user) 
+  	{       
+	    if (user != null) 
 	    {                 
 	        // Regenerate session when signing in                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 	        // to prevent fixation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
@@ -142,25 +95,27 @@ exports.login = function(req, res)
 	    } 
 	    else 
 	    {  
-	    	generateResponse(req, res, 0, err);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+	    	generateResponse(req, res, 0, err.message);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 	    }
 	});
 };                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
      
 exports.signup = function(req,res)
 {
+	console.log(req.body.username);
+	console.log(req.body.password);
 	User.find({ username: req.body.username }, function(err, userFromDatabase) 
 	{
 		console.log(req.body);
 		var jsonResult;
 		
-		if (err != null) 
+		if (err) 
 		{
-			generateResponse(req, res, 0, err);
+			generateResponse(req, res, 0, err.message);
 		}
 		else if (userFromDatabase[0] == null)
 		{
-			if ((req.body.password.length() < 11) && (req.body.password.length() > 4 ))
+			if ((req.body.password.toString().length < 11) && (req.body.password.toString().length > 4 ))
 			{
 				console.log("Got user: ", userFromDatabase);
 				var randomSalt = Math.floor(Math.random() * 9000) + 1000;
@@ -168,7 +123,7 @@ exports.signup = function(req,res)
 			  	hash(req.body.password, randomSalt.toString() ,function(err, hash)
 			  	{
 				    var newUser =  new User({
-											 _id : mongoose.Types.ObjectId(),
+											 _id : GLOBAL.DB.Types.ObjectId(),
 											  username : req.body.username,
 											  password : hash.toString('hex'),
 											  creation_date : new Date,
@@ -181,7 +136,7 @@ exports.signup = function(req,res)
 					{
 					  	if (err)
 					  	{
-					  		generateResponse(req, res, 0, err);
+					  		generateResponse(req, res, 0, err.message);
 					  	 	console.log(err);
 					  	} 
 					  	else
@@ -209,18 +164,20 @@ exports.signup = function(req,res)
 		req.session.error = message;
 		console.log(message);
 	}   
- }
+ };
 
 exports.checkIfUserExist = function(req,res)
 {
 	var name = req.params.username;
-	console.log(name);
+	
  	User.find({ username: name }, function(err, userFromDatabase)
 	 	{
+	 		// If error occured
 	 		if (err) 
 			{
-				generateResponse(req, res, 0, err);
+				generateResponse(req, res, 0, err.message);
 			}
+			// If the user exist in database
 			else if (userFromDatabase[0] != null)
 		  	{
 		  		generateResponse(req, res, 1, 'user exist');
@@ -230,19 +187,5 @@ exports.checkIfUserExist = function(req,res)
 				generateResponse(req, res, 0, 'cannot find user');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 		  	}
 	 	});
-};
-                   
-
- function guid() 
- {
-	  function s4() 
-	  {
-	    return Math.floor((1 + Math.random()) * 0x10000)
-	      .toString(16)
-	      .substring(1);
-	  }
-
-	  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-	    s4() + '-' + s4() + s4() + s4();
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

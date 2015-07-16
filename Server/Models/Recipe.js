@@ -1,8 +1,5 @@
 // grab the things we need
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
-mongoose.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
+var Schema = GLOBAL.DB.Schema;
 
 // create a schema
 var recipeSchema = new Schema({
@@ -20,7 +17,7 @@ var recipeSchema = new Schema({
 
 // the schema is useless so far
 // we need to create a model using it
-var Recipe = mongoose.model('Recipe', recipeSchema);
+var Recipe = GLOBAL.DB.model('Recipe', recipeSchema);
 
 // make this available to our users in our Node applications
 module.exports = Recipe;

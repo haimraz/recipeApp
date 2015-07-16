@@ -39,6 +39,20 @@ exports.getRecipeById = function(req,res)
     });
 };
 
+exports.getCommentsByRecipeId = function(req,res)
+{
+    var id = mongoose.Types.ObjectId(req.params.id);
+    Recipe.findById(id, function(err, recipeFromDB) {
+        if (!err){
+            console.log(recipeFromDB.comments);
+            res.end(JSON.stringify(recipeFromDB.comments));
+        }
+        else {
+            generateResponse(req, res, 0, err);
+        }
+    });
+};
+
 
 function generateResponse(req, res, exitCode, message)
 {

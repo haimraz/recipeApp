@@ -49,6 +49,7 @@ app.get('/LoginController/checkIfUserExist/:username', loginController.checkIfUs
 // Recepies controller
 app.get('/RecipeController/getAllRecipes', recipeController.getAllRecipes);
 app.get('/RecipeController/getRecipeById/:id', recipeController.getRecipeById);
+app.get('/RecipeController/getCommentsByRecipeId/:id', recipeController.getCommentsByRecipeId);
 
 
  function guid() 

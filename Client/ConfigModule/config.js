@@ -1,8 +1,9 @@
 var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule']);
-
+var user ={};
+user.name = "Haim" // TODO take from session
 // configure our routes
 recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $compileProvider) {
-    $compileProvider.debugInfoEnabled(false);
+    $compileProvider.debugInfoEnabled(true);
     $routeProvider
         .when('/', {
             templateUrl: 'HomeModule/home.html',
@@ -15,6 +16,10 @@ recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $
         .when('/AllRecipes', {
             templateUrl: 'AllRecipesModule/allRecipes.html',
             controller: 'allRecipesCtrl'
+        })
+        .when('/BigRecipe', {
+            templateUrl: 'BigRecipeModule/bigRecipe.html',
+            controller: 'bigRecipeCtrl'
         })
         .when('/Graphs', {
             templateUrl: '../GraphModule/graph.html',

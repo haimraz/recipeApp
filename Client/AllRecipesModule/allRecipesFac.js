@@ -7,7 +7,7 @@ recApp.factory('allRecipesService', function () {
         var recipes = [
             {
                 id: "1",
-                title: "aaa",
+                title: "bbb",
                 category: "sdsa",
                 description: "asdsaasd",
                 img: "Vendor/images/mypic.jpg",
@@ -15,7 +15,7 @@ recApp.factory('allRecipesService', function () {
             },
             {
                 id: "2",
-                title: "aaa",
+                title: "bbb",
                 category: "sdsa",
                 description: "asdsaasd",
                img: "Vendor/images/mypic.jpg",

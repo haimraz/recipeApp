@@ -1,4 +1,4 @@
-<div class="col-md-4 text-center">
+<div class="col-md-4 text-center" ng-controller="smallRecipeCtrl">
     <div class="thumbnail">
         <img class="img-responsive" src="{{::recipe.img}}" alt="">
         <div class="caption">
@@ -7,19 +7,24 @@
                         </h3>
             <p>{{::recipe.description}}</p>
             <ul class="list-inline">
+                <!--
+                <li data-ng-repeat="star in stars">
+                    <input class="star {{::star.id}}" data-ng-model="value" id="{{::star.id}}5" type="radio"  data-ng-change='newValue(value)'/>
+                    <label class="star {{::star.id}}" for="{{::star.id}}"></label>
+                </li>
+-->
                 <div class="stars">
-                    <form action="">
-                        <input class="star star-5" id="star-5" type="radio" name="star" />
+                        <input class="star star-5" value="5" id="star-5" type="radio"   ng-model="rate" ng-change="rateChange(rate)"/>
                         <label class="star star-5" for="star-5"></label>
-                        <input class="star star-4" id="star-4" type="radio" name="star" />
+                        <input class="star star-4" value="4" id="star-4" type="radio"  ng-model="rate" ng-change="rateChange(rate)"/>
                         <label class="star star-4" for="star-4"></label>
-                        <input class="star star-3" id="star-3" type="radio" name="star" />
+                        <input class="star star-3" value="3" id="star-3" type="radio"   ng-model="rate" ng-change="rateChange(rate)"/>
                         <label class="star star-3" for="star-3"></label>
-                        <input class="star star-2" id="star-2" type="radio" name="star" />
+                        <input class="star star-2" value="2" id="star-2" type="radio"   ng-model="rate" ng-change="rateChange(rate)"/>
                         <label class="star star-2" for="star-2"></label>
-                        <input class="star star-1" id="star-1" type="radio" name="star" />
+                        <input class="star star-1" value="1" id="star-1" type="radio"   ng-model="rate" ng-change="rateChange(rate)"/>
                         <label class="star star-1" for="star-1"></label>
-                    </form>
+                        {{rate}}
                 </div>
             </ul>
         </div>

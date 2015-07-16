@@ -11,7 +11,7 @@ GLOBAL.DB.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 var loginController = require('./LoginController/LoginController');
 var recipeController = require('./RecipeController/RecipeController');
 
-var app = express();
+var app = express(); 
 
 // Config
 

@@ -2,6 +2,8 @@ var express = require('express');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 
 // Globals
 GLOBAL.DB  = require('mongoose');
@@ -57,6 +59,36 @@ app.get('/Comments/getCommentById/:id', commentController.getCommentById);
 app.post('/Comments/addCommentToRecipe/:id', commentController.addCommentToRecipe);
 app.post('/Comments/removeCommentFromRecipe/:id', commentController.removeCommentFromRecipe);
 app.put('/Comments/updateComment/:id', commentController.updateComment);
+
+
+//Socket.io manager
+io.on('connection', function(socket){
+	  console.log('a user connected');
+	  
+	  socket.on('doSend', function(msg)
+	  {
+	    io.emit('doSend', msg);
+	    console.log('message: ' + msg);
+	  });
+
+	  socket.on('addMessage', function(msg)
+	  {
+	    io.emit('addMessage', msg);
+	    console.log('message: ' + msg);
+	  });
+
+	  socket.on('removeMessage', function(msg)
+	  {
+	    io.emit('removeMessage', msg);
+	    console.log('message: ' + msg);
+	  });
+
+	  socket.on('updateMessage', function(msg)
+	  {
+	    io.emit('updateMessage', msg);
+	    console.log('message: ' + msg);
+	  });
+});
 
 function guid()
 {

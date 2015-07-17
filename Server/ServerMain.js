@@ -55,12 +55,6 @@ app.get('/RecipeController/getCommentsByRecipeId/:id', recipeController.getComme
 //Socket.io manager
 io.on('connection', function(socket){
 	  console.log('a user connected');
-	  
-	  socket.on('doSend', function(msg)
-	  {
-	    io.emit('doSend', msg);
-	    console.log('message: ' + msg);
-	  });
 
 	  socket.on('addMessage', function(msg)
 	  {

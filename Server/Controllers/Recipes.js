@@ -8,6 +8,7 @@ var session = require('express-session');
 var mongoose = require("mongoose");
 
 var Recipe = require('../Models/Recipe');
+var Utils = require('../Common/Utils');
 var app = express();
 
 
@@ -18,7 +19,7 @@ exports.getAllRecipes = function(req,res)
             res.end(JSON.stringify(recipesFromDB));
         }
         else {
-            generateResponse(req, res, 0, err);
+            Utils.generateResponse(req, res, 0, err);
         }
     });
 };
@@ -34,7 +35,7 @@ exports.getRecipeById = function(req,res)
             res.end(JSON.stringify(recipeFromDB));
         }
         else {
-            generateResponse(req, res, 0, err);
+            Utils.generateResponse(req, res, 0, err);
         }
     });
 };
@@ -48,20 +49,7 @@ exports.getCommentsByRecipeId = function(req,res)
             res.end(JSON.stringify(recipeFromDB.comments));
         }
         else {
-            generateResponse(req, res, 0, err);
+            Utils.generateResponse(req, res, 0, err);
         }
     });
 };
-
-
-function generateResponse(req, res, exitCode, message)
-{
-    var jsonResult = {"exit_code" : exitCode, "message" : message};
-    res.end(JSON.stringify(jsonResult));
-
-    if (exitCode == 0)
-    {
-        req.session.error = message;
-        console.log(message);
-    }
-}

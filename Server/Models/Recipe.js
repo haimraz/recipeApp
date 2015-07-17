@@ -1,14 +1,6 @@
 // grab the things we need
 var Schema = GLOBAL.DB.Schema;
 
-var commentSchema = new Schema({
-  _id: String
-  ,content: String
-  ,creation_date: Date
-  ,creating_user: String
-  ,title: String
-});
-
 // create a schema
 var recipeSchema = new Schema({
   //_id: { type: ObjectId, required: true, unique: true , index : true},
@@ -20,7 +12,7 @@ var recipeSchema = new Schema({
   cuisine : {type: String, required: true},
   picture_path : {type: String, required: true},
   difficulty : {type : Number},
-  comments: [commentSchema]
+  comments: [{type:Schema.ObjectId, ref:'Comment'}]
 });
 
 // the schema is useless so far

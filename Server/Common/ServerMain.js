@@ -4,12 +4,12 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 // Globals
-
 GLOBAL.DB  = require('mongoose');
 GLOBAL.DB.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
-var loginController = require('./LoginController/LoginController');
-var recipeController = require('./RecipeController/RecipeController');
+var loginController = require('./../Controllers/Users');
+var recipeController = require('./../Controllers/Recipes');
+var commentController = require('./../Controllers/Comments');
 
 var app = express(); 
 
@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use(session(
 	{
 	cookieName :'session',
-	genid: function(req) 
+	genid: function()
 		  {
 		    return guid(); // use UUIDs for session IDs 
 		  },
@@ -46,24 +46,29 @@ app.post('/LoginController/login', loginController.login);
 app.post('/LoginController/signup', loginController.signup);
 app.get('/LoginController/checkIfUserExist/:username', loginController.checkIfUserExist);
 
-// Recepies controller
+// Recipes controller
 app.get('/RecipeController/getAllRecipes', recipeController.getAllRecipes);
 app.get('/RecipeController/getRecipeById/:id', recipeController.getRecipeById);
 app.get('/RecipeController/getCommentsByRecipeId/:id', recipeController.getCommentsByRecipeId);
 
+// Comments controller
+//app.get('/Controllers/getAllRecipes', commentController.getAllRecipes);
+app.post('/Controllers/addComment', commentController.addComment);
+app.get('/Controllers/getCommentById/:id', commentController.getCommentById);
+//app.get('/Controllers/getCommentsByRecipeId/:id', commentController.getCommentsByRecipeId);
 
- function guid() 
- {
-	  function s4() 
-	  {
-	    return Math.floor((1 + Math.random()) * 0x10000)
-	      .toString(16)
-	      .substring(1);
-	  }
+function guid()
+{
+  function s4()
+  {
+	return Math.floor((1 + Math.random()) * 0x10000)
+	  .toString(16)
+	  .substring(1);
+  }
 
-	  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-	    s4() + '-' + s4() + s4() + s4();
-} 
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+	s4() + '-' + s4() + s4() + s4();
+}
 
 // posts
 app.listen(80);

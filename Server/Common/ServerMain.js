@@ -2,18 +2,18 @@ var express = require('express');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
 
 // Globals
 GLOBAL.DB  = require('mongoose');
 GLOBAL.DB.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
+var app = express();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+
 var loginController = require('./../Controllers/Users');
 var recipeController = require('./../Controllers/Recipes');
 var commentController = require('./../Controllers/Comments');
-
-var app = express(); 
 
 // Config
 

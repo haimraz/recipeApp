@@ -2,6 +2,8 @@ var express = require('express');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 
 // Globals
 
@@ -41,7 +43,6 @@ app.use(session(
 //app.get('/', site.index);
 
 // Login controller
-
 app.post('/LoginController/login', loginController.login);
 app.post('/LoginController/signup', loginController.signup);
 app.get('/LoginController/checkIfUserExist/:username', loginController.checkIfUserExist);
@@ -50,6 +51,36 @@ app.get('/LoginController/checkIfUserExist/:username', loginController.checkIfUs
 app.get('/RecipeController/getAllRecipes', recipeController.getAllRecipes);
 app.get('/RecipeController/getRecipeById/:id', recipeController.getRecipeById);
 app.get('/RecipeController/getCommentsByRecipeId/:id', recipeController.getCommentsByRecipeId);
+
+//Socket.io manager
+io.on('connection', function(socket){
+	  console.log('a user connected');
+	  
+	  socket.on('doSend', function(msg)
+	  {
+	    io.emit('doSend', msg);
+	    console.log('message: ' + msg);
+	  });
+
+	  socket.on('addMessage', function(msg)
+	  {
+	    io.emit('addMessage', msg);
+	    console.log('message: ' + msg);
+	  });
+
+	  socket.on('removeMessage', function(msg)
+	  {
+	    io.emit('removeMessage', msg);
+	    console.log('message: ' + msg);
+	  });
+
+	  socket.on('updateMessage', function(msg)
+	  {
+	    io.emit('updateMessage', msg);
+	    console.log('message: ' + msg);
+	  });
+});
+
 
 
  function guid() 

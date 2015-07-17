@@ -12,7 +12,7 @@ var recipeSchema = new Schema({
   cuisine : {type: String, required: true},
   picture_path : {type: String, required: true},
   difficulty : {type : Number},
-  comments: [{type:Schema.ObjectId, ref:'Comment'}]
+  comments: [{type:Schema.Types.ObjectId, ref:'Comment'}]
 });
 
 // the schema is useless so far

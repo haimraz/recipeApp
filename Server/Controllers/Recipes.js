@@ -7,15 +7,15 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var mongoose = require("mongoose");
 
+var Comment = require('../Models/Comment');
 var Recipe = require('../Models/Recipe');
 var Utils = require('../Common/Utils');
 var app = express();
 
 
-exports.getAllRecipes = function(req,res)
-{
-    Recipe.find({}, function(err, recipesFromDB) {
-        if (!err){
+exports.getAllRecipes = function (req, res) {
+    Recipe.find({}, function (err, recipesFromDB) {
+        if (!err) {
             res.end(JSON.stringify(recipesFromDB));
         }
         else {
@@ -24,13 +24,12 @@ exports.getAllRecipes = function(req,res)
     });
 };
 
-exports.getRecipeById = function(req,res)
-{
+exports.getRecipeById = function (req, res) {
     console.log(req.params.id);
     var id = mongoose.Types.ObjectId(req.params.id);
     console.log(id);
-    Recipe.findById(id, function(err, recipeFromDB) {
-        if (!err){
+    Recipe.findById(id, function (err, recipeFromDB) {
+        if (!err) {
             console.log(recipeFromDB);
             res.end(JSON.stringify(recipeFromDB));
         }
@@ -40,16 +39,17 @@ exports.getRecipeById = function(req,res)
     });
 };
 
-exports.getCommentsByRecipeId = function(req,res)
-{
+exports.getCommentsByRecipeId = function (req, res) {
     var id = mongoose.Types.ObjectId(req.params.id);
-    Recipe.findById(id, function(err, recipeFromDB) {
-        if (!err){
-            console.log(recipeFromDB.comments);
-            res.end(JSON.stringify(recipeFromDB.comments));
-        }
-        else {
-            Utils.generateResponse(req, res, 0, err);
-        }
-    });
+    Recipe.findById(id).
+        populate('comments') // only works if we pushed refs to children
+        .exec(function (err, recipeFromDB) {
+            if (!err) {
+                console.log(recipeFromDB.comments);
+                res.end(JSON.stringify(recipeFromDB.comments));
+            }
+            else {
+                Utils.generateResponse(req, res, 0, err);
+            }
+        });
 };

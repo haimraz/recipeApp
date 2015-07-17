@@ -42,20 +42,21 @@ app.use(session(
 
 // Login controller
 
-app.post('/LoginController/login', loginController.login);
-app.post('/LoginController/signup', loginController.signup);
-app.get('/LoginController/checkIfUserExist/:username', loginController.checkIfUserExist);
+app.post('/Users/login', loginController.login);
+app.post('/Users/signup', loginController.signup);
+app.get('/Users/checkIfUserExist/:username', loginController.checkIfUserExist);
 
 // Recipes controller
-app.get('/RecipeController/getAllRecipes', recipeController.getAllRecipes);
-app.get('/RecipeController/getRecipeById/:id', recipeController.getRecipeById);
-app.get('/RecipeController/getCommentsByRecipeId/:id', recipeController.getCommentsByRecipeId);
+app.get('/Recipes/getAllRecipes', recipeController.getAllRecipes);
+app.get('/Recipes/getRecipeById/:id', recipeController.getRecipeById);
+app.get('/Recipes/getCommentsByRecipeId/:id', recipeController.getCommentsByRecipeId);
 
 // Comments controller
 //app.get('/Controllers/getAllRecipes', commentController.getAllRecipes);
-app.post('/Controllers/addComment', commentController.addComment);
-app.get('/Controllers/getCommentById/:id', commentController.getCommentById);
-//app.get('/Controllers/getCommentsByRecipeId/:id', commentController.getCommentsByRecipeId);
+app.get('/Comments/getCommentById/:id', commentController.getCommentById);
+app.post('/Comments/addCommentToRecipe/:id', commentController.addCommentToRecipe);
+app.post('/Comments/removeCommentFromRecipe/:id', commentController.removeCommentFromRecipe);
+app.put('/Comments/updateComment/:id', commentController.updateComment);
 
 function guid()
 {

@@ -1,4 +1,4 @@
-recApp.controller('menuCtrl', ['$scope', function ($scope) {
+recApp.controller('menuCtrl', ['$scope', '$rootScope' , function ($scope, $rootScope) {
     $scope.menuItems = [
         {
             title: "About Us",
@@ -17,4 +17,6 @@ recApp.controller('menuCtrl', ['$scope', function ($scope) {
             href: "#Login"
         }
     ];
+    
+    $rootScope.url = 'http://10.0.0.10:80/';
 }]);

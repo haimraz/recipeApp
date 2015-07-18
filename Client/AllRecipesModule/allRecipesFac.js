@@ -1,9 +1,8 @@
-recApp.factory('allRecipesService', function () {
+recApp.factory('allRecipesService', ['$rootScope', '$http', function ($rootScope, $http) {
 
     var fac = {};
 
-    fac.getAllRecipes = function () {
-        //TODO get request to server
+    fac.getAllRecipesDemo = function () {
         var recipes = [
             {
                 id: "1",
@@ -18,7 +17,7 @@ recApp.factory('allRecipesService', function () {
                 title: "bbb",
                 category: "sdsa",
                 description: "asdsaasd",
-               img: "Vendor/images/mypic.jpg",
+                img: "Vendor/images/mypic.jpg",
                 rank: "3"
             },
             {
@@ -34,7 +33,7 @@ recApp.factory('allRecipesService', function () {
                 title: "aaa",
                 category: "sdsa",
                 description: "asdsaasd",
-               img: "Vendor/images/mypic.jpg",
+                img: "Vendor/images/mypic.jpg",
                 rank: "3"
             },
             {
@@ -42,7 +41,7 @@ recApp.factory('allRecipesService', function () {
                 title: "aaa",
                 category: "sdsa",
                 description: "asdsaasd",
-               img: "Vendor/images/mypic.jpg",
+                img: "Vendor/images/mypic.jpg",
                 rank: "3"
             },
             {
@@ -50,7 +49,7 @@ recApp.factory('allRecipesService', function () {
                 title: "aaa",
                 category: "sdsa",
                 description: "asdsaasd",
-               img: "Vendor/images/mypic.jpg",
+                img: "Vendor/images/mypic.jpg",
                 rank: "3"
             },
             {
@@ -66,5 +65,15 @@ recApp.factory('allRecipesService', function () {
         return recipes;
     }
 
+    fac.getAllRecipes = function () {
+        $http.get($rootScope.url + 'Recipes/getAllRecipes').success(function (response) {
+                return response;
+            })
+            .error(function (error) {
+                console.log(error);
+                return [];
+            });
+    }
+
     return fac;
-});
+}]);

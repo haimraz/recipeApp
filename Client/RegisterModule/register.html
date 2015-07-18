@@ -9,7 +9,10 @@
                     <form name="regForm" class="form col-md-12 center-block" data-ng-submit="submitForm(regForm.$valid)" novalidate>
                         <div class="form-group" data-ng-class="{ 'has-error' : regForm.username.$invalid && !regForm.username.$pristine }">
                             <label>Username</label>
-                            <input type="text" name="username" data-ng-model="user.username" class="form-control input-lg" placeholder="Username" data-ng-minlength="3" data-ng-maxlength="8" required>
+                            <input type="text" name="username" data-ng-model="user.username" class="form-control input-lg" placeholder="Username" data-ng-minlength="3" data-ng-maxlength="8" required >
+<!--                            username-validator-->
+<!--                            <p data-ng-show="regForm.username.$error" class="help-block">Username already in use</p>-->
+<!--                            <p data-ng-show="regForm.username.$pending" class="help-block">Checking username availability...</p>-->
                             <p data-ng-show="regForm.username.$invalid && !regForm.username.$pristine" class="help-block">Username is required.</p>
                             <p data-ng-show="regForm.username.$error.minlength" class="help-block">Username is too short.</p>
                             <p data-ng-show="regForm.username.$error.maxlength" class="help-block">Username is too long.</p>
@@ -33,7 +36,7 @@
                             <p data-ng-show="regForm.username.$invalid && !regForm.username.$pristine" class="help-block">Username is required.</p>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-lg btn-block" data-ng-disabled="regForm.$invalid">Sign Up</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" data-ng-disabled="regForm.$invalid || regForm.$pending">Sign Up</button>
                             <span class="pull-right"><a href="#Login">Login</a></span><span><a href="" tooltips="" tooltip-title="You have to enter all the fields" tooltip-side="bottom">Need help?</a></span>
                         </div>
                     </form>

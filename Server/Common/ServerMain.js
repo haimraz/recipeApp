@@ -14,6 +14,9 @@ var io = require('socket.io')(http);
 var loginController = require('./../Controllers/Users');
 var recipeController = require('./../Controllers/Recipes');
 var commentController = require('./../Controllers/Comments');
+var configController = require('./../Controllers/Configs');
+var statisticsController = require('./../Controllers/Statistics');
+
 
 // Config
 
@@ -43,9 +46,10 @@ app.use(session(
 //app.get('/', site.index);
 
 // Login controller
-
 app.post('/Users/login', loginController.login);
+app.post('/Users/logout', loginController.logout);
 app.post('/Users/signup', loginController.signup);
+app.get('/Users/getCurrentUser', loginController.getCurrentUser);
 app.get('/Users/checkIfUserExist/:username', loginController.checkIfUserExist);
 
 // Recipes controller
@@ -54,17 +58,21 @@ app.get('/Recipes/getRecipeById/:id', recipeController.getRecipeById);
 app.get('/Recipes/getCommentsByRecipeId/:id', recipeController.getCommentsByRecipeId);
 
 // Comments controller
-//app.get('/Controllers/getAllRecipes', commentController.getAllRecipes);
 app.get('/Comments/getCommentById/:id', commentController.getCommentById);
 app.post('/Comments/addCommentToRecipe/:id', commentController.addCommentToRecipe);
 app.post('/Comments/removeCommentFromRecipe/:id', commentController.removeCommentFromRecipe);
 app.put('/Comments/updateComment/:id', commentController.updateComment);
 
+// Config controller
+app.get('/Configs/getAllConfigs', configController.getAllConfigs);
+
+// Statistics controller
+app.get('/Statistics/getCountByCategory', statisticsController.getCountByCategory);
 
 //Socket.io manager
 io.on('connection', function(socket){
 	  console.log('a user connected');
-	  
+
 	  socket.on('doSend', function(msg)
 	  {
 	    io.emit('doSend', msg);

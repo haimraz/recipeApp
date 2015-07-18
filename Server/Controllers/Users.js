@@ -43,25 +43,8 @@ function restrict(req, res, next) {
         res.redirect('/login');
     }
 }
-/*
- app.get('/restricted', restrict, function(req, res)
- {
- res.send('Wahoo! restricted area, click to <a href="/logout">logout</a>');
- });
-
- app.get('/logout', function(req, res)
- {
- // destroy the user's session to log them out
- // will be re-created next request
- req.session.destroy(function(){
- res.redirect('/');
- });
- });
- */
 
 exports.login = function (req, res) {
-    console.log("BEFORE AUTH", req.body.username);
-
     authenticate(req.body.username, req.body.password, function (err, user) {
         if (user != null) {
             // Regenerate session when signing in
@@ -69,14 +52,37 @@ exports.login = function (req, res) {
             req.session.regenerate(function () {
                 // Store the user's primary key
                 // in the session store to be retrieved
-                req.session.user = user._id;
-                generateResponse(req, res, 1, "");
+                req.session.user = user;
+                console.log("Connected -> ", req.session.user);
+                Utils.generateResponse(req, res, 1, "");
             });
         }
         else {
-            generateResponse(req, res, 0, err.message);
+            Utils.generateResponse(req, res, 0, err.message);
         }
     });
+};
+
+exports.logout = function (req, res) {
+    var user = req.session.user;
+    if (user != null) {
+        req.session.destroy(function () {
+            Utils.generateResponse(req, res, 1, "");
+        });
+    }
+    else {
+        Utils.generateResponse(req, res, 0, "No user is connected");
+    }
+};
+
+exports.getCurrentUser = function (req, res) {
+    var user = req.session.user;
+    if (user != null) {
+        res.end(JSON.stringify(user));
+    }
+    else {
+        Utils.generateResponse(req, res, 0,  "No user is connected");
+    }
 };
 
 exports.signup = function (req, res) {
@@ -140,4 +146,3 @@ exports.checkIfUserExist = function (req, res) {
         }
     });
 };
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

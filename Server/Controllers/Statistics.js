@@ -11,11 +11,20 @@ var Utils = require('../Common/Utils');
 var Recipe = require('../Models/Recipe');
 var app = express();
 
-exports.getCountByDifficulty = function(req,res)
+exports.getCountByCategory = function(req,res)
 {
-    Recipe.aggre({}, function(err, recipesFromDB) {
+    var agg = [
+        {$group: {
+            _id: "$category",
+
+            // SUCCESS!!! :D
+            total: {$sum: 1}
+        }}
+    ];
+
+    Recipe.aggregate(agg, function(err, recipes){
         if (!err){
-            res.end(JSON.stringify(recipesFromDB));
+            res.end(JSON.stringify(recipes));
         }
         else {
             Utils.generateResponse(req, res, 0, err);

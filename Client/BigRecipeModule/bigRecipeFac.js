@@ -1,10 +1,12 @@
 recApp.factory('bigRecipeService', [function () {
 
     var Service = {};
-    Service.passScope = function (scope) {
+    Service.loadBigRecipePage = function (recipeId, scope) {
+        //Todo take from server data
         Service.scope = scope;
+        loadAllMessages();
     }
-    Service.loadAllMessages = function () {
+    function loadAllMessages() {
         Service.scope.messages = [
             {
                 time: "15",
@@ -23,60 +25,31 @@ recApp.factory('bigRecipeService', [function () {
             }
         ];
     }
-    var wsUri = "ws://echo.websocket.org/"; // todo put you socket url
-
-    Service.testWebSocket = function () {
-        websocket = new WebSocket(wsUri);
-        websocket.onopen = function (evt) {
-            onOpen(evt)
-        };
-        websocket.onclose = function (evt) {
-            onClose(evt)
-        };
-        websocket.onmessage = function (evt) {
-            onMessage(evt)
-        };
-        websocket.onerror = function (evt) {
-            onError(evt)
-        };
-    }
-
-
-    function onOpen(evt) {
-        writeToScreen("CONNECTED");
-        //  Service.doSend("WebSocket rocks");
-    }
-
-    function onClose(evt) {
-        writeToScreen("DISCONNECTED");
-    }
-
-    function onMessage(evt) {
-        writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data + '</span>');
-       Service.scope.messages.push(JSON.parse(evt.data));
-        Service.scope.$apply();
-        // angular.$apply();
-        //  websocket.close();
-    }
-
-    function onError(evt) {
-        writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
-    }
-
-    Service.doSend = function (message) {
-        writeToScreen("SENT: " + message);
-        websocket.send(message);
-    }
-
-    function writeToScreen(message) {
-        //        var pre = document.createElement("p");
-        //        pre.style.wordWrap = "break-word";
-        //        pre.innerHTML = message;
-        //        output.appendChild(pre);
-        console.log(message);
-    }
-
-    //  window.addEventListener("load", testWebSocket, false);
+//    var socket = io();
+//
+//    socket.on('addMessageFromServer', function (data) {
+//        writeToScreen("RECIVED: " + data);
+//        Service.scope.messages.push(JSON.parse(data));
+//        Service.scope.$apply();
+//    });
+//
+//    Service.closeSocket = function () {
+//        websocket.close();
+//    }
+//
+//    function onError(evt) {
+//        writeToScreen(evt.data);
+//    }
+//
+//    Service.doSend = function (message) {
+//        writeToScreen("SENT: " + message);
+//        websocket.send(message);
+//    }
+//
+//    // TODO function for test
+//    function writeToScreen(message) {
+//        console.log(message);
+//    }
 
     return Service;
 

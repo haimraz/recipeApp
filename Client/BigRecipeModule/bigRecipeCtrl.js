@@ -1,16 +1,11 @@
-recApp.controller('bigRecipeCtrl', ['$scope', 'bigRecipeService', function ($scope, bigRecipeService) {
+recApp.controller('bigRecipeCtrl', ['$scope', 'bigRecipeService', '$routeParams', function ($scope, bigRecipeService, $routeParams) {
     $scope.currMsg = {};
-    bigRecipeService.passScope($scope);
-    bigRecipeService.loadAllMessages();
-
-    // $scope.messages = bigRecipeService.scope.;
-    bigRecipeService.testWebSocket();
-
+    bigRecipeService.loadBigRecipePage($routeParams.recipeId, $scope);
+    
     $scope.addComment = function () {
         $scope.currMsg.time = "1";
         $scope.currMsg.name = user.name;
         var msgCopy = angular.copy($scope.currMsg);
-        //  $scope.messages.push(msgCopy);
         bigRecipeService.doSend(angular.toJson(msgCopy));
         $scope.currMsg = {};
     }

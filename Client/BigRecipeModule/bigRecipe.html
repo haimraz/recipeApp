@@ -6,6 +6,10 @@
             <h1 class="page-header">Portfolio Item
                     <small>Item Subheading</small>
                 </h1>
+            <ol class="breadcrumb">
+                    <li><a href="#">Home</a>
+                    </li>
+                </ol>
         </div>
     </div>
     <div class="row">
@@ -24,26 +28,28 @@
                 <li>Consectetur</li>
                 <li>Adipiscing Elit</li>
             </ul>
+            <hr>
+            <rating-star-directive></rating-star-directive>
         </div>
     </div>
     <hr>
-     <div class="col-lg-12 col-sm-12 text-left">
-    <div class="well">
-        <h4>What is on your mind?</h4>
-    <div class="input-group">
-        <input type="text" id="userComment" data-ng-model="currMsg.content" class="form-control input-sm chat-input" placeholder="Write your message here..." />
-	    <span class="input-group-btn" ng-click="addComment()">     
+    <div class="col-lg-12 col-sm-12 text-left">
+        <div class="well">
+            <h4>What is on your mind?</h4>
+            <div class="input-group">
+                <input type="text" id="userComment" data-ng-model="currMsg.content" class="form-control input-sm chat-input" placeholder="Write your message here..." />
+                <span class="input-group-btn" ng-click="addComment()">     
             <a href="" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"></span> Add Comment</a>
-        </span>
-    </div>
-    <hr>
-    <ul id="sortable" class="list-unstyled ui-sortable" ng-repeat="message in messages">
-        <strong class="pull-left primary-font">{{message.name}}</strong>
-        <small class="pull-right text-muted">
+                </span>
+            </div>
+            <hr>
+            <ul id="sortable" class="list-unstyled ui-sortable" ng-repeat="message in messages">
+                <strong class="pull-left primary-font">{{message.name}}</strong>
+                <small class="pull-right text-muted">
            <span class="glyphicon glyphicon-time"></span>{{message.time}} mins ago</small>
-        <br>
-        <li class="ui-state-default">{{message.content}}</li>
-        <hr>
-    </ul>
+                <br>
+                <li class="ui-state-default">{{message.content}}</li>
+                <hr>
+            </ul>
+        </div>
     </div>
-</div>

@@ -1,4 +1,4 @@
-var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule']);
+var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule', 'ratingStarModule']);
 var user ={};
 user.name = "Haim" // TODO take from session
 // configure our routes
@@ -17,7 +17,7 @@ recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $
             templateUrl: 'AllRecipesModule/allRecipes.html',
             controller: 'allRecipesCtrl'
         })
-        .when('/BigRecipe', {
+        .when('/BigRecipe/:recipeId?', {
             templateUrl: 'BigRecipeModule/bigRecipe.html',
             controller: 'bigRecipeCtrl'
         })
@@ -33,11 +33,11 @@ recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $
             templateUrl: 'RegisterModule/register.html',
             controller: 'registerCtrl'
         })
-        .when('/Recipe', {
-            templateUrl: 'RecipeModule/recipe.html',
-            controller: 'recipeCtrl'
+        .when('/404', {
+            templateUrl: 'NotFoundModule/notFoundPage.html',
+            controller: 'notFoundCtrl'
         })
         .otherwise({
-            redirectTo: '../404Module/404.html'
+            redirectTo: '/404'
         });
 }]);

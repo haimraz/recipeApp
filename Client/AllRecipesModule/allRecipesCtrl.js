@@ -1,5 +1,12 @@
 recApp.controller('allRecipesCtrl', ['$scope', 'allRecipesService', function ($scope, allRecipesService) {
-    
-    $scope.recipes = allRecipesService.getAllRecipes();
-    
+
+    allRecipesService.getAllRecipes()
+    .success(function (response) {
+            $scope.recipes = response;
+        })
+        .error(function (error) {
+            console.log(error);
+            $scope.recipes = [];
+        });
+
 }]);

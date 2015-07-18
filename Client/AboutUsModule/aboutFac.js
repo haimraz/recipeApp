@@ -1,11 +1,11 @@
-recApp.factory('aboutService', function(){
+recApp.factory('aboutService', ['$http', '$rootScope' , function($http, $rootScope){
      
     var fac = {};
      
     fac.getAboutData = function()
     {
-        //TODO get about data from server
+        return $http.get($rootScope.url + 'Configs/getAllConfigs');
     }
 
     return fac;
-});
+}]);

@@ -1,9 +1,9 @@
 var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule', 'ratingStarModule', 'usernameModule']);
-var user ={};
+var user = {};
 user.name = "Haim" // TODO take from session
 
 // configure our routes
-recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $compileProvider) {
+recApp.config(['$routeProvider', '$compileProvider',  function ($routeProvider, $compileProvider) {
     $compileProvider.debugInfoEnabled(true);
     $routeProvider
         .when('/', {
@@ -30,13 +30,15 @@ recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $
             templateUrl: 'LoginModule/login.html',
             controller: 'loginCtrl'
         })
+        .when('/Logout', {
+            controller: 'logoutCtrl'
+        })
         .when('/Register', {
             templateUrl: 'RegisterModule/register.html',
             controller: 'registerCtrl'
         })
         .when('/404', {
-            templateUrl: 'NotFoundModule/notFoundPage.html',
-            controller: 'notFoundCtrl'
+            templateUrl: 'NotFoundModule/notFoundPage.html'
         })
         .otherwise({
             redirectTo: '/404'

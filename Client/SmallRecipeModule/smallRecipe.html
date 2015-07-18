@@ -1,19 +1,13 @@
 <div class="col-md-4 text-center" ng-controller="smallRecipeCtrl">
     <div class="thumbnail">
-        <img class="img-responsive" src="{{::recipe.img}}" alt="">
+        <img class="img-responsive" src="{{::recipe.picture_path_small}}" alt="">
         <div class="caption">
-            <h3><a style="color:black" href="#BigRecipe/{{::recipe.id}}">{{::recipe.title}}</a><br>
+            <h3><a style="color:black" href="#BigRecipe/{{::recipe._id}}">{{::recipe.title}}</a><br>
                             <small>{{::recipe.category}}</small>
                         </h3>
-            <p>{{::recipe.description}}</p>
+            <p>{{::recipe.cuisine}}</p>
             <ul class="list-inline">
-                <rating-star-directive></rating-star-directive>
-                <!--
-                <li data-ng-repeat="star in stars">
-                    <input class="star {{::star.id}}" data-ng-model="value" id="{{::star.id}}5" type="radio"  data-ng-change='newValue(value)'/>
-                    <label class="star {{::star.id}}" for="{{::star.id}}"></label>
-                </li>
--->
+                <rating-star-directive rank=recipe.rank></rating-star-directive>
             </ul>
         </div>
     </div>

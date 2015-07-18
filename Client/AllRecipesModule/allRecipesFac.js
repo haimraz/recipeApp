@@ -66,13 +66,7 @@ recApp.factory('allRecipesService', ['$rootScope', '$http', function ($rootScope
     }
 
     fac.getAllRecipes = function () {
-        $http.get($rootScope.url + 'Recipes/getAllRecipes').success(function (response) {
-                return response;
-            })
-            .error(function (error) {
-                console.log(error);
-                return [];
-            });
+        return $http.get($rootScope.url + 'Recipes/getAllRecipes');
     }
 
     return fac;

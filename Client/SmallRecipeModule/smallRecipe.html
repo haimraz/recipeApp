@@ -2,30 +2,18 @@
     <div class="thumbnail">
         <img class="img-responsive" src="{{::recipe.img}}" alt="">
         <div class="caption">
-            <h3>{{::recipe.title}}<br>
+            <h3><a style="color:black" href="#BigRecipe/{{::recipe.id}}">{{::recipe.title}}</a><br>
                             <small>{{::recipe.category}}</small>
                         </h3>
             <p>{{::recipe.description}}</p>
             <ul class="list-inline">
+                <rating-star-directive></rating-star-directive>
                 <!--
                 <li data-ng-repeat="star in stars">
                     <input class="star {{::star.id}}" data-ng-model="value" id="{{::star.id}}5" type="radio"  data-ng-change='newValue(value)'/>
                     <label class="star {{::star.id}}" for="{{::star.id}}"></label>
                 </li>
 -->
-                <div class="stars">
-                        <input class="star star-5" value="5" id="star-5" type="radio"   ng-model="rate" ng-change="rateChange(rate)"/>
-                        <label class="star star-5" for="star-5"></label>
-                        <input class="star star-4" value="4" id="star-4" type="radio"  ng-model="rate" ng-change="rateChange(rate)"/>
-                        <label class="star star-4" for="star-4"></label>
-                        <input class="star star-3" value="3" id="star-3" type="radio"   ng-model="rate" ng-change="rateChange(rate)"/>
-                        <label class="star star-3" for="star-3"></label>
-                        <input class="star star-2" value="2" id="star-2" type="radio"   ng-model="rate" ng-change="rateChange(rate)"/>
-                        <label class="star star-2" for="star-2"></label>
-                        <input class="star star-1" value="1" id="star-1" type="radio"   ng-model="rate" ng-change="rateChange(rate)"/>
-                        <label class="star star-1" for="star-1"></label>
-                        {{rate}}
-                </div>
             </ul>
         </div>
     </div>

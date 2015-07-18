@@ -15,10 +15,6 @@ recApp.controller('menuCtrl', ['$scope', function ($scope) {
         {
             title: "Login",
             href: "#Login"
-        },
-        {
-            title: "Big Recipe",
-            href: "#BigRecipe"
         }
     ];
 }]);

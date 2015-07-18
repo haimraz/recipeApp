@@ -8,8 +8,8 @@ GLOBAL.DB  = require('mongoose');
 GLOBAL.DB.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
 var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+//var http = require('http').Server(app);
+//var io = require('socket.io')(http);
 
 var loginController = require('./../Controllers/Users');
 var recipeController = require('./../Controllers/Recipes');
@@ -62,33 +62,33 @@ app.put('/Comments/updateComment/:id', commentController.updateComment);
 
 
 //Socket.io manager
-io.on('connection', function(socket){
-	  console.log('a user connected');
-	  
-	  socket.on('doSend', function(msg)
-	  {
-	    io.emit('doSend', msg);
-	    console.log('message: ' + msg);
-	  });
-
-	  socket.on('addMessage', function(msg)
-	  {
-	    io.emit('addMessage', msg);
-	    console.log('message: ' + msg);
-	  });
-
-	  socket.on('removeMessage', function(msg)
-	  {
-	    io.emit('removeMessage', msg);
-	    console.log('message: ' + msg);
-	  });
-
-	  socket.on('updateMessage', function(msg)
-	  {
-	    io.emit('updateMessage', msg);
-	    console.log('message: ' + msg);
-	  });
-});
+//io.on('connection', function(socket){
+//	  console.log('a user connected');
+//
+//	  socket.on('doSend', function(msg)
+//	  {
+//	    io.emit('doSend', msg);
+//	    console.log('message: ' + msg);
+//	  });
+//
+//	  socket.on('addMessage', function(msg)
+//	  {
+//	    io.emit('addMessage', msg);
+//	    console.log('message: ' + msg);
+//	  });
+//
+//	  socket.on('removeMessage', function(msg)
+//	  {
+//	    io.emit('removeMessage', msg);
+//	    console.log('message: ' + msg);
+//	  });
+//
+//	  socket.on('updateMessage', function(msg)
+//	  {
+//	    io.emit('updateMessage', msg);
+//	    console.log('message: ' + msg);
+//	  });
+//});
 
 function guid()
 {

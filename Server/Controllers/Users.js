@@ -70,11 +70,11 @@ exports.login = function (req, res) {
                 // Store the user's primary key
                 // in the session store to be retrieved
                 req.session.user = user._id;
-                generateResponse(req, res, 1, "");
+                Utils.generateResponse(req, res, 1, "");
             });
         }
         else {
-            generateResponse(req, res, 0, err.message);
+            Utils.generateResponse(req, res, 0, err.message);
         }
     });
 };

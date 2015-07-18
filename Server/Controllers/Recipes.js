@@ -9,12 +9,13 @@ var mongoose = require("mongoose");
 
 var Comment = require('../Models/Comment');
 var Recipe = require('../Models/Recipe');
+var User = require('../Models/User');
 var Utils = require('../Common/Utils');
 var app = express();
 
 
 exports.getAllRecipes = function (req, res) {
-    Recipe.find({}, function (err, recipesFromDB) {
+    Recipe.find({}, '_id category cuisine picture_path_small rank title', function (err, recipesFromDB) {
         if (!err) {
             res.end(JSON.stringify(recipesFromDB));
         }
@@ -28,15 +29,17 @@ exports.getRecipeById = function (req, res) {
     console.log(req.params.id);
     var id = mongoose.Types.ObjectId(req.params.id);
     console.log(id);
-    Recipe.findById(id, function (err, recipeFromDB) {
-        if (!err) {
-            console.log(recipeFromDB);
-            res.end(JSON.stringify(recipeFromDB));
-        }
-        else {
-            Utils.generateResponse(req, res, 0, err);
-        }
-    });
+    Recipe.findById(id)
+        .populate('comments')
+        .exec(function (err, recipeFromDB) {
+            if (!err) {
+                console.log(recipeFromDB);
+                res.end(JSON.stringify(recipeFromDB));
+            }
+            else {
+                Utils.generateResponse(req, res, 0, err);
+            }
+        });
 };
 
 exports.getCommentsByRecipeId = function (req, res) {

@@ -60,10 +60,10 @@ recApp.factory('allRecipesService', ['$rootScope', '$http', function ($rootScope
                 img: "Vendor/images/mypic.jpg",
                 rank: "3"
             },
-        ]
+        ];
 
         return recipes;
-    }
+    };
 
     fac.getAllRecipes = function () {
         $http.get($rootScope.url + 'Recipes/getAllRecipes').success(function (response) {
@@ -73,7 +73,7 @@ recApp.factory('allRecipesService', ['$rootScope', '$http', function ($rootScope
                 console.log(error);
                 return [];
             });
-    }
+    };
 
     return fac;
 }]);

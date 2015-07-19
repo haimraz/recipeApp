@@ -6,7 +6,7 @@ controller('ctrl', ['$scope', function ($scope) {
                 $scope.rate = value;
                 console.log($scope);
 
-            }
+            };
             $scope.stars = [
                 {
                     id: "star-1"

@@ -18,12 +18,12 @@ recApp.factory('registerService', ['$rootScope', '$http', function ($rootScope, 
             alertify.error('Add supplier failed', 5);
         });
 
-    }
+    };
 
     fac.checkIfUsernameExists = function (username) {
         //TODO get request to server
 
-    }
+    };
 
     return fac;
 

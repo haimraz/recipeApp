@@ -1,6 +1,6 @@
 var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule', 'ratingStarModule', 'usernameModule']);
 var user ={};
-user.name = "Haim" // TODO take from session
+user.name = "Haim"; // TODO take from session
 
 // configure our routes
 recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $compileProvider) {

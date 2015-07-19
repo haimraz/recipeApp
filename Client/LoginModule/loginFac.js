@@ -20,7 +20,7 @@ recApp.factory('loginService', ['$rootScope', '$http', function ($rootScope, $ht
             $scope.suppliers.push(copySup);
             alertify.error('Add supplier failed', 5);
         });
-    }
+    };
 
     return fac;
 

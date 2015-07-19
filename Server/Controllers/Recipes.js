@@ -56,3 +56,26 @@ exports.getCommentsByRecipeId = function (req, res) {
             }
         });
 };
+
+exports.addRank = function (req, res) {
+    var id = mongoose.Types.ObjectId(req.params.id);
+    Recipe.findById(id, function (err, recipe) {
+        if (!err) {
+            console.log(recipe.rank, recipe.rankers);
+            recipe.rank = ((recipe.rank * recipe.rankers) + req.body.rank) / (recipe.rankers + 1);
+            recipe.rankers += 1;
+            console.log(recipe.rank, recipe.rankers);
+            recipe.save(function (err) {
+                if (!err) {
+                    Utils.generateResponse(req, res, 1, Math.round(recipe.rank));
+                }
+                else {
+                    Utils.generateResponse(req, res, 0, err);
+                }
+            });
+        }
+        else {
+            Utils.generateResponse(req, res, 0, err);
+        }
+    });
+};

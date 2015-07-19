@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="706ed836-43a4-43cc-b511-55dbce510a31" name="Default" comment="Merge branch 'master' of https://github.com/haimraz/recipeApp&#10;&#10;Conflicts:&#10;&#9;Server/Common/ServerMain.js&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/.gitmodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/.gitmodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/.jamignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/.jamignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/.jscs.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/node_modules/ms/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/base64id/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/node_modules/ms/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/after/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/arraybuffer.slice/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/blob/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/options/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/ultron/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/node_modules/ms/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/backo2/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-bind/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/component-inherit/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/node_modules/ms/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/after/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/arraybuffer.slice/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/blob/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/node_modules/callsite/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/node_modules/callsite/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/options/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/ultron/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/indexof/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/object-component/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/to-array/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/after/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/ultron/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/after/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/ultron/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/blob/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/blob/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/BufferPool.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/BufferPool.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/BufferUtil.fallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/BufferUtil.fallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/BufferUtil.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/BufferUtil.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/ErrorCodes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/ErrorCodes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/backo2/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-bind/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/component-inherit/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/node_modules/callsite/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/node_modules/callsite/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/object-component/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Ilya.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/after/LICENCE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/after/LICENCE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/to-array/LICENCE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/LICENSE-GPL.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/LICENSE-GPL.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/LICENSE-MIT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/LICENSE-MIT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/LICENSE-MIT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/LICENSE-MIT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/benchmark/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/benchmark/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/ultron/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/ultron/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/arraybuffer.slice/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/blob/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/options/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/backo2/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-bind/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/component-inherit/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/arraybuffer.slice/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/blob/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/node_modules/callsite/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/node_modules/callsite/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/options/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/indexof/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/object-component/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/PerMessageDeflate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/PerMessageDeflate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/node_modules/ms/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/base64id/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/node_modules/ms/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/after/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/arraybuffer.slice/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/blob/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/options/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/ultron/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/node_modules/ms/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/benchmark/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/benchmark/doc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/isarray/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/node_modules/ms/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/after/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/arraybuffer.slice/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/blob/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/options/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/ultron/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/node_modules/isarray/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/to-array/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/benchmark/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/benchmark/doc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/isarray/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/backo2/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-bind/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/component-inherit/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/node_modules/callsite/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/node_modules/callsite/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/indexof/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/object-component/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Receiver.hixie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Receiver.hixie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Receiver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Receiver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Sender.hixie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Sender.hixie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Sender.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Sender.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Validation.fallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Validation.fallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/WebSocket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/WebSocket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/WebSocketServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/WebSocketServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/lib/XMLHttpRequest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/after/test/after-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/after/test/after-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/autotest.watchr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/lib/base64-arraybuffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/lib/base64-arraybuffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/test/base64-arraybuffer_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/test/base64-arraybuffer_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/base64id/lib/base64id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/bench/bench.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/bench/bench.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/benchmark/benchmark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/benchmark/benchmark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/fixtures/big.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/fixtures/big.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/fixtures/big.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/fixtures/big.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/binary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/binary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/lib/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/lib/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/isarray/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/node_modules/isarray/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/isarray/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/lib/client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/isarray/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/backo2/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-bind/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/component-inherit/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/node_modules/isarray/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/indexof/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/object-component/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/isarray/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/coverage/coverage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/coverage/coverage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/debug/lib/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/debug/lib/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/debug/lib/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/example/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/engine.io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/engine.io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/gen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/tests/generate-test-data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/tests/generate-test-data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/grunt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/grunt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/coverage/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/coverage/utf8.js/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/tests/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/coverage/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/coverage/utf8.js/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/tests/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/node_modules/ms/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/transports/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/node_modules/ms/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/after/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/arraybuffer.slice/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/blob/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/blob/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/ultron/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/node_modules/ms/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/bench/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/debug/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/isarray/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/backo2/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/backo2/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-bind/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/debug/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transports/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/component-inherit/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/node_modules/ms/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/after/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/arraybuffer.slice/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/blob/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/blob/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/node_modules/callsite/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/node_modules/callsite/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/ultron/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/node_modules/isarray/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/indexof/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/object-component/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/to-array/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/bench/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/debug/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/isarray/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/component-inherit/test/inherit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/is-buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/is-buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/isArguments.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/coverage/lcov-report/lib/json3.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/coverage/lcov-report/lib/json3.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/lib/json3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/lib/json3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/lib/json3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/lib/json3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/lib/keys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/lib/keys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/coverage/lcov.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/coverage/lcov.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/lib/manager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/test/mocha.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/test/mocha.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/lib/namespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/object-component/test/object.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/lib/on.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/options/lib/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/options/lib/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/http/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/debug/node_modules/ms/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/base64id/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/debug/node_modules/ms/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/after/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/arraybuffer.slice/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/blob/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/options/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/ultron/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/node_modules/ms/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/object-keys/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/benchmark/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/component-emitter/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/isarray/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/backo2/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-bind/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/component-emitter/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/component-inherit/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/node_modules/ms/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/after/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/arraybuffer.slice/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/blob/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/node_modules/isarray/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/node_modules/better-assert/node_modules/callsite/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/node_modules/better-assert/node_modules/callsite/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/options/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/ultron/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/node_modules/isarray/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/indexof/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/object-component/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/node_modules/better-assert/node_modules/callsite/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/to-array/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/benchmark/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/component-emitter/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/isarray/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/transports/polling-jsonp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transports/polling-jsonp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/transports/polling-xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transports/polling-xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/transports/polling.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transports/polling.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/coverage/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/coverage/lcov-report/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/coverage/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/coverage/lcov-report/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/coverage/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/json3/coverage/lcov-report/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/coverage/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/json3/coverage/lcov-report/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/recipeApp.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/benchmark/test/run-test.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/benchmark/test/run-test.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/arraybuffer.slice/test/slice-buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/arraybuffer.slice/test/slice-buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/socket.io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/lib/socket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/socket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/lib/socket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/socket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-constants.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-exceptions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-headers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-redirect-302.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-redirect-303.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-redirect-307.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-request-methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-request-protocols.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/has-binary/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/ws/node_modules/ultron/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/has-binary-data/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules/benchmark/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/has-binary/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/ultron/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-parser/node_modules/benchmark/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/testdata.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/tests/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/tests/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/transport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/lib/url.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/coverage/utf8.js/utf8.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/coverage/utf8.js/utf8.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/utf8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/utf8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/lib/transports/websocket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transports/websocket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/x.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/x.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/xmlhttprequest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Models/Recipe.js" afterPath="$PROJECT_DIR$/Server/Models/Recipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Controllers/Recipes.js" afterPath="$PROJECT_DIR$/Server/Controllers/Recipes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Common/ServerMain.js" afterPath="$PROJECT_DIR$/Server/Common/ServerMain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Controllers/Users.js" afterPath="$PROJECT_DIR$/Server/Controllers/Users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/AboutUsModule/aboutFac.js" afterPath="$PROJECT_DIR$/Client/AboutUsModule/aboutFac.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/AllRecipesModule/allRecipesFac.js" afterPath="$PROJECT_DIR$/Client/AllRecipesModule/allRecipesFac.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/BigRecipeModule/bigRecipeFac - Copy.js" afterPath="$PROJECT_DIR$/Client/BigRecipeModule/bigRecipeFac - Copy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/BigRecipeModule/bigRecipeFac.js" afterPath="$PROJECT_DIR$/Client/BigRecipeModule/bigRecipeFac.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Vendor/js/bootstrap.js" afterPath="$PROJECT_DIR$/Client/Vendor/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/ConfigModule/config.js" afterPath="$PROJECT_DIR$/Client/ConfigModule/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Vendor/js/jqBootstrapValidation.js" afterPath="$PROJECT_DIR$/Client/Vendor/js/jqBootstrapValidation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/LoginModule/loginFac.js" afterPath="$PROJECT_DIR$/Client/LoginModule/loginFac.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/RatingModule/ratingStarDirective.js" afterPath="$PROJECT_DIR$/Client/RatingModule/ratingStarDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/RegisterModule/registerFac.js" afterPath="$PROJECT_DIR$/Client/RegisterModule/registerFac.js" />
+    </list>
+    <ignored path="recipeApp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="recipeApp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Users.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Controllers/Users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statistics.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Controllers/Statistics.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recipes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Server/Controllers/Recipes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5070547">
+              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comments.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Controllers/Comments.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="147" column="27" selection-start-line="137" selection-start-column="24" selection-end-line="147" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recipe.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Models/Recipe.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.709678">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Common/Utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerMain.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Common/ServerMain.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.935484">
+              <caret line="58" column="25" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Server/ServerMain.js" />
+        <option value="$PROJECT_DIR$/Server/RecipeController/RecipeController.js" />
+        <option value="$PROJECT_DIR$/Server/LoginController/LoginController.js" />
+        <option value="$PROJECT_DIR$/Server/Common/Utils.js" />
+        <option value="$PROJECT_DIR$/Server/Controllers/Comments.js" />
+        <option value="$PROJECT_DIR$/Recipes.json.postman_collection" />
+        <option value="$PROJECT_DIR$/Server/Models/User.js" />
+        <option value="$PROJECT_DIR$/Server/Models/Config.js" />
+        <option value="$PROJECT_DIR$/Server/Models/Comment.js" />
+        <option value="$PROJECT_DIR$/Server/Controllers/Configs.js" />
+        <option value="$PROJECT_DIR$/Server/Controllers/Statistics.js" />
+        <option value="$PROJECT_DIR$/Server/Controllers/Users.js" />
+        <option value="$PROJECT_DIR$/Server/Models/Recipe.js" />
+        <option value="$PROJECT_DIR$/Server/Common/ServerMain.js" />
+        <option value="$PROJECT_DIR$/Server/Controllers/Recipes.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-16" />
+    <option name="y" value="-16" />
+    <option name="width" value="3872" />
+    <option name="height" value="2104" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipeApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\InApps\recipeApp\Server\Controllers" />
+      <recent name="D:\InApps\recipeApp\Server\Common" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="706ed836-43a4-43cc-b511-55dbce510a31" name="Default" comment="" />
+      <created>1437069659179</created>
+      <option name="number" value="Default" />
+      <updated>1437069659179</updated>
+    </task>
+    <task id="LOCAL-00001" summary="pathes changed comments added">
+      <created>1437130531237</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1437130531237</updated>
+    </task>
+    <task id="LOCAL-00002" summary="lot of change">
+      <created>1437145245720</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1437145245720</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/haimraz/recipeApp&#10;&#10;Conflicts:&#10;&#9;Server/Common/ServerMain.js&#10;">
+      <created>1437145607030</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1437145607030</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://github.com/haimraz/recipeApp&#10;&#10;Conflicts:&#10;&#9;Server/Common/ServerMain.js&#10;">
+      <created>1437146138715</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1437146138715</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge branch 'master' of https://github.com/haimraz/recipeApp&#10;&#10;Conflicts:&#10;&#9;Server/Common/ServerMain.js&#10;">
+      <created>1437146547146</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1437146547146</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge branch 'master' of https://github.com/haimraz/recipeApp&#10;&#10;Conflicts:&#10;&#9;Server/Common/ServerMain.js&#10;">
+      <created>1437224146971</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1437224146971</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge branch 'master' of https://github.com/haimraz/recipeApp&#10;&#10;Conflicts:&#10;&#9;Server/Common/ServerMain.js&#10;">
+      <created>1437229433823</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1437229433823</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge branch 'master' of https://github.com/haimraz/recipeApp&#10;&#10;Conflicts:&#10;&#9;Server/Common/ServerMain.js&#10;">
+      <created>1437247991078</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1437247991078</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Postman Updated">
+      <created>1437248158848</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1437248158848</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-16" y="-16" width="3872" height="2104" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16226913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937855" sideWeight="0.49630606" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44689265" sideWeight="0.5029024" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937855" sideWeight="0.4978892" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44689265" sideWeight="0.4970976" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <MESSAGE value="pathes changed comments added" />
+    <MESSAGE value="lot of change" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/haimraz/recipeApp&#10;&#10;Conflicts:&#10;&#9;Server/Common/ServerMain.js&#10;" />
+    <MESSAGE value="Postman Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Postman Updated" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Server/Controllers/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipes.json.postman_collection">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipes.json.postman_collection">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Models/Comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4006989">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/node_modules/mongoose/static.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03791887">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/command_result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11375661">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Controllers/Configs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Models/Config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81455636">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Common/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Controllers/Statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Models/Recipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.709678">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Controllers/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Controllers/Comments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="147" column="27" selection-start-line="137" selection-start-column="24" selection-end-line="147" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Common/ServerMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.935484">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Controllers/Recipes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5070547">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

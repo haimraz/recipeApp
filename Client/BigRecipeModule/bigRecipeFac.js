@@ -5,7 +5,7 @@ recApp.factory('bigRecipeService', [function () {
         //Todo take from server data
         Service.scope = scope;
         loadAllMessages();
-    }
+    };
     function loadAllMessages() {
         Service.scope.messages = [
             {

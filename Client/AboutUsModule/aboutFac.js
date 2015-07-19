@@ -5,7 +5,7 @@ recApp.factory('aboutService', function(){
     fac.getAboutData = function()
     {
         //TODO get about data from server
-    }
+    };
 
     return fac;
 });

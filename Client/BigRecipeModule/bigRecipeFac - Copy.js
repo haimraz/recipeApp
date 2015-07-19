@@ -3,7 +3,7 @@ recApp.factory('bigRecipeService', [function () {
     var Service = {};
     Service.passScope = function (scope) {
         Service.scope = scope;
-    }
+    };
     Service.loadAllMessages = function () {
         Service.scope.messages = [
             {
@@ -22,7 +22,7 @@ recApp.factory('bigRecipeService', [function () {
                 name: "Talya"
             }
         ];
-    }
+    };
     var wsUri = "ws://echo.websocket.org/"; // todo put you socket url
 
     Service.testWebSocket = function () {
@@ -39,7 +39,7 @@ recApp.factory('bigRecipeService', [function () {
         websocket.onerror = function (evt) {
             onError(evt)
         };
-    }
+    };
 
 
     function onOpen(evt) {
@@ -59,7 +59,7 @@ recApp.factory('bigRecipeService', [function () {
     Service.closeSocket = function()
     {
         websocket.close();
-    }
+    };
 
     function onError(evt) {
         writeToScreen(evt.data);
@@ -68,7 +68,7 @@ recApp.factory('bigRecipeService', [function () {
     Service.doSend = function (message) {
         writeToScreen("SENT: " + message);
         websocket.send(message);
-    }
+    };
 
     // TODO function for test
     function writeToScreen(message) {

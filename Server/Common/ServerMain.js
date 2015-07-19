@@ -56,6 +56,7 @@ app.get('/Users/checkIfUserExist/:username', loginController.checkIfUserExist);
 app.get('/Recipes/getAllRecipes', recipeController.getAllRecipes);
 app.get('/Recipes/getRecipeById/:id', recipeController.getRecipeById);
 app.get('/Recipes/getCommentsByRecipeId/:id', recipeController.getCommentsByRecipeId);
+app.put('/Recipes/addRank/:id', recipeController.addRank);
 
 // Comments controller
 app.get('/Comments/getCommentById/:id', commentController.getCommentById);

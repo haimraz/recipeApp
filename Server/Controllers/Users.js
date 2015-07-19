@@ -78,10 +78,10 @@ exports.logout = function (req, res) {
 exports.getCurrentUser = function (req, res) {
     var user = req.session.user;
     if (user != null) {
-        res.end(JSON.stringify(user));
+        Utils.generateResponse(req, res, 1, user.username);
     }
     else {
-        Utils.generateResponse(req, res, 0,  "No user is connected");
+        Utils.generateResponse(req, res, 0, "No user is connected");
     }
 };
 

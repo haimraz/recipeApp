@@ -42,6 +42,7 @@
 			"description": "",
 			"write": true,
 			"order": [
+				"38f3f593-c6d4-aaa7-3475-b7395eec83d0",
 				"9c4aa758-22cf-bcfc-25db-5a1850baa4b5",
 				"59fb792a-a4cd-ff6b-2f50-7aa5ddea7849",
 				"6bc1564c-fa4d-b2d3-cd86-24c6299f6670"
@@ -72,16 +73,18 @@
 			"description": "",
 			"write": true,
 			"order": [
+				"d86a315a-0c36-10c8-e94c-0b45f5d5e29f",
+				"c4c716f2-3e1f-31a2-b0b3-ec917ceae9a1",
 				"8b8b3800-3664-c660-8c36-39c76415ceeb",
 				"ae372457-9750-ee5f-9072-7e90e99d7247",
-				"8d8bec89-3fce-ff97-2e6f-940378101f98",
-				"c4c716f2-3e1f-31a2-b0b3-ec917ceae9a1"
+				"8d8bec89-3fce-ff97-2e6f-940378101f98"
 			],
 			"collection": "8fbc32e6-ea5f-bcd2-ceb6-ca267932f719",
 			"owner": 0,
 			"collection_name": "Recipes",
 			"collection_owner": 0,
-			"collection_id": "a851ae39-a0cc-0f96-e2b1-d25769bfe3f0"
+			"collection_id": "a851ae39-a0cc-0f96-e2b1-d25769bfe3f0",
+			"collectionId": "a851ae39-a0cc-0f96-e2b1-d25769bfe3f0"
 		}
 	],
 	"timestamp": 1436973777774,
@@ -107,6 +110,26 @@
 			"description": "",
 			"collectionId": "a851ae39-a0cc-0f96-e2b1-d25769bfe3f0",
 			"responses": []
+		},
+		{
+			"id": "38f3f593-c6d4-aaa7-3475-b7395eec83d0",
+			"headers": "X-App-Token: {{APP_TOKEN}}\nX-App-Version: {{APP_VERSION}}\nAccept-Language: {{LANG}}\nAuthorization: {{AUTH_ACCOUNT}}\nX-Timestamp: {{TIMESTAMP}}\nX-Authorization-Version: {{AUTH_VERSION}}\nX-Consumer-Key: {{CONSUMER_KEY}}\nContent-Type: {{JSON}}\nX-Server-Version: {{SERVER_VERSION}}\n",
+			"url": "{{SERVER}}/Recipes/addRank/55a3993a46b1fe01994cedaf",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437327226565,
+			"name": "AddRank",
+			"description": "",
+			"collectionId": "a851ae39-a0cc-0f96-e2b1-d25769bfe3f0",
+			"responses": [],
+			"rawModeData": "{\n    \"rank\" : 5\n}"
 		},
 		{
 			"id": "3e1e1b30-dfb7-321c-6d94-9b6167d37969",
@@ -319,6 +342,25 @@
 			"helperAttributes": {},
 			"time": 1437235429303,
 			"name": "GetCommentById",
+			"description": "",
+			"collectionId": "a851ae39-a0cc-0f96-e2b1-d25769bfe3f0",
+			"responses": []
+		},
+		{
+			"id": "d86a315a-0c36-10c8-e94c-0b45f5d5e29f",
+			"headers": "username: litalku14\n",
+			"url": "{{SERVER}}/Users/getCurrentUser",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437325042185,
+			"name": "GetCurrentUser",
 			"description": "",
 			"collectionId": "a851ae39-a0cc-0f96-e2b1-d25769bfe3f0",
 			"responses": []

@@ -1,8 +1,4 @@
 angular.module('smallRecipeModule', []).
-controller('smallRecipeCtrl', ['$scope', function ($scope) {
-
-
-    }]).
 directive('smallRecipeDirective', function () {
     return {
         restrict: 'E',
@@ -10,8 +6,6 @@ directive('smallRecipeDirective', function () {
         scope: {
             recipe: '='
         },
-        templateUrl: "SmallRecipeModule/smallRecipe.html",
-        link: function (scope, elm, attrs) {
-        }
+        templateUrl: "SmallRecipeModule/smallRecipe.html"
     }
 });

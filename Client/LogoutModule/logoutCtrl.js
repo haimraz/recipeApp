@@ -1,11 +1,8 @@
-recApp.controller('logoutCtrl', ['$scope', 'loginService', '$location', function ($scope, logoutService, $location) {
-    $scope.user = {};
+recApp.controller('logoutCtrl', ['$scope', 'logoutService', '$location', 'userService', function ($scope, logoutService, $location, userService) {
 
-    $scope.submitForm = function (isValid) {
-
-        // check to make sure the form is completely valid
-        if (isValid) {
-            loginService.sendLogin($scope.user)
+    userService.checkIfConnected().success(function (response) {
+        if (response.exit_code == 1) {
+            logoutService.sendLogout()
                 .success(function (response) {
                     if (response.exit_code == 1) {
                         $scope.$parent.menuItems[3].href = "#Login";
@@ -18,6 +15,11 @@ recApp.controller('logoutCtrl', ['$scope', 'loginService', '$location', function
                 }).error(function (error) {
                     console.log(error);
                 });
+        } else {
+            console.log(response.message);
         }
-    };
+    }).error(function (error) {
+        console.log(error);
+    });
+
 }]);

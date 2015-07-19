@@ -2,10 +2,9 @@ recApp.factory('logoutService', ['$rootScope', '$http', function ($rootScope, $h
 
     var fac = {};
 
-    fac.sendLogin = function (user) {
+    fac.sendLogout = function () {
         return $http.post($rootScope.url + 'Users/Logout');
     }
 
     return fac;
-
 }]);

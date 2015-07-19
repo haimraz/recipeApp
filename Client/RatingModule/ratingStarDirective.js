@@ -1,29 +1,14 @@
 angular.module('ratingStarModule', []).
-controller('ctrl', ['$scope', function ($scope) {
-            $scope.rankChange = function (value) {
-                $scope.rank = value;
-                console.log($scope);
-
-            }
-            $scope.stars = [
-                {
-                    id: "star-1"
-                    },
-                {
-                    id: "star-2"
-                    },
-                {
-                    id: "star-3"
-                    },
-                {
-                    id: "star-4"
-                    },
-                {
-                    id: "star-5"
-                    },
-                ];
+factory('ratingService', ['$rootScope', '$http', function ($rootScope, $http)
+    {
+        var fac = {};
+        fac.rateStar = function(rank, recipeId)
+        {
+            
+        }
+        return fac;
     }]).
-directive('ratingStarDirective', function () {
+directive('ratingStarDirective', ['userService', function (userService) {
     return {
         restrict: 'E',
         replace: false,
@@ -32,7 +17,17 @@ directive('ratingStarDirective', function () {
         },
         templateUrl: "RatingModule/ratingStar.html",
         link: function (scope, elm, attrs) {
-            console.log(scope.rank);
+            scope.starClicked = function (value) {
+                userService.checkIfConnected().success(function (response) {
+                    if (response.exit_code == 1) {
+                        scope.rank = value;
+                    } else {
+                        console.log(response.message);
+                    }
+                }).error(function (error) {
+                    console.log(error);
+                });
+            }
         }
     }
-});
+}]);

@@ -31,6 +31,7 @@ recApp.config(['$routeProvider', '$compileProvider',  function ($routeProvider, 
             controller: 'loginCtrl'
         })
         .when('/Logout', {
+            templateUrl: 'LogoutModule/logout.html',
             controller: 'logoutCtrl'
         })
         .when('/Register', {

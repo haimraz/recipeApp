@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 // Globals
-GLOBAL.DB  = require('mongoose');
+GLOBAL.DB = require('mongoose');
 GLOBAL.DB.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
 var app = express();

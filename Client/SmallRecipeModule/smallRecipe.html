@@ -5,9 +5,9 @@
             <h3><a style="color:black" href="#BigRecipe/{{::recipe._id}}">{{::recipe.title}}</a><br>
                             <small>{{::recipe.category}}</small>
                         </h3>
-            <p>{{::recipe.cuisine}}</p>
+            <p><span class="flag-icon flag-icon-{{::recipe.cuisine}}"></span></p>
             <ul class="list-inline">
-                <rating-star-directive rank=recipe.rank></rating-star-directive>
+                <rating-star-directive rank=recipe.rank rid=recipe._id></rating-star-directive>
             </ul>
         </div>
     </div>

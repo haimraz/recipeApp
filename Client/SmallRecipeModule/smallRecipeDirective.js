@@ -6,6 +6,10 @@ directive('smallRecipeDirective', function () {
         scope: {
             recipe: '='
         },
+        link: function (scope, elm, attrs) 
+        {
+            console.log(scope.recipe);
+        },
         templateUrl: "SmallRecipeModule/smallRecipe.html"
     }
 });

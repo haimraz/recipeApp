@@ -1,9 +1,7 @@
 angular.module('ratingStarModule', []).
 controller('ctrl', ['$scope', function ($scope) {
-
-            $scope.rate = "1";
-            $scope.rateChange = function (value) {
-                $scope.rate = value;
+            $scope.rankChange = function (value) {
+                $scope.rank = value;
                 console.log($scope);
 
             };
@@ -30,11 +28,11 @@ directive('ratingStarDirective', function () {
         restrict: 'E',
         replace: false,
         scope: {
-            recipe: '='
+            rank: '='
         },
         templateUrl: "RatingModule/ratingStar.html",
         link: function (scope, elm, attrs) {
-     
+            console.log(scope.rank);
         }
     }
 });

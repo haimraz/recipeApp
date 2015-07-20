@@ -1,15 +1,16 @@
-var express = require('express');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require('express-session');
 
 // Globals
 GLOBAL.DB = require('mongoose');
 GLOBAL.DB.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
 
-var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+var express = require('express')
+    , app = express()
+    , http = require('http')
+    , server = http.createServer(app)
+    , io = require('socket.io').listen(server)
+    , session = require('express-session');
 
 var loginController = require('./../Controllers/Users');
 var recipeController = require('./../Controllers/Recipes');
@@ -29,20 +30,19 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use(session(
-	{
-	cookieName :'session',
-	genid: function()
-		  {
-		    return guid(); // use UUIDs for session IDs 
-		  },
-	  secret: 'asavadv'
-	}
+    {
+        cookieName: 'session',
+        genid: function () {
+            return guid(); // use UUIDs for session IDs
+        },
+        secret: 'asavadv'
+    }
 ));
 
 //app.use(express.static(__dirname + '/public'));
 
 // General
-
+var port = 8080;
 //app.get('/', site.index);
 
 // Login controller
@@ -71,47 +71,53 @@ app.get('/Configs/getAllConfigs', configController.getAllConfigs);
 app.get('/Statistics/getCountByCategory', statisticsController.getCountByCategory);
 
 //Socket.io manager
-io.on('connection', function(socket){
-	  console.log('a user connected');
+io.sockets.on('connection', function (socket) {
 
-	  socket.on('doSend', function(msg)
-	  {
-	    io.emit('doSend', msg);
-	    console.log('message: ' + msg);
-	  });
+    // when the client emits 'sendchat', this listens and executes
+    socket.on('sendAdd', function (data) {
+        // we tell the client to execute 'updatechat' with 2 parameters
+        //
+        console.log(data);
+        io.sockets.emit('addComment', socket.username, data);
+    });
 
-	  socket.on('addMessage', function(msg)
-	  {
-	    io.emit('addMessage', msg);
-	    console.log('message: ' + msg);
-	  });
+    socket.on('sendEdit', function (data) {
+        // we tell the client to execute 'updatechat' with 2 parameters
+        //
+        console.log(data);
+        io.sockets.emit('editComment', socket.username, data);
+    });
 
-	  socket.on('removeMessage', function(msg)
-	  {
-	    io.emit('removeMessage', msg);
-	    console.log('message: ' + msg);
-	  });
+    socket.on('sendDelete', function (data) {
+        // we tell the client to execute 'updatechat' with 2 parameters
+        //
+        console.log(data);
+        io.sockets.emit('DeleteComment', socket.username, data);
+    });
 
-	  socket.on('updateMessage', function(msg)
-	  {
-	    io.emit('updateMessage', msg);
-	    console.log('message: ' + msg);
-	  });
+    // when the user disconnects.. perform this
+    //socket.on('disconnect', function(){
+    //    // remove the username from global usernames list
+    //    delete usernames[socket.username];
+    //    // update list of users in chat, client-side
+    //    io.sockets.emit('updateusers', usernames);
+    //    // echo globally that this client has left
+    //    socket.broadcast.emit('updateComments', 'SERVER', socket.username + ' has disconnected');
+    //});
 });
 
-function guid()
-{
-  function s4()
-  {
-	return Math.floor((1 + Math.random()) * 0x10000)
-	  .toString(16)
-	  .substring(1);
-  }
+function guid() {
+    function s4() {
+        return Math.floor((1 + Math.random()) * 0x10000)
+            .toString(16)
+            .substring(1);
+    }
 
-  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-	s4() + '-' + s4() + s4() + s4();
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+        s4() + '-' + s4() + s4() + s4();
 }
 
 // posts
-app.listen(80);
-console.log('Express started on port 80');
+//app.listen(80);
+server.listen(port);
+console.log('Express started on port', port);

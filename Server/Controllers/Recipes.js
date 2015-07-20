@@ -67,7 +67,7 @@ exports.addRank = function (req, res) {
             console.log(recipe.rank, recipe.rankers);
             recipe.save(function (err) {
                 if (!err) {
-                    Utils.generateResponse(req, res, 1, Math.round(recipe.rank));
+                    Utils.generateResponse(req, res, 1, recipe.rank);
                 }
                 else {
                     Utils.generateResponse(req, res, 0, err);

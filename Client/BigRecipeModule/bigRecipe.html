@@ -13,14 +13,15 @@
         </div>
     </div>
     <div class="row">
-        <progressbar class="progress-striped active" animate="true" max="5" value="progressValue" type="success"><i><span count-to="{{countTo}}" duration="1" count-from="{{countFrom}}"></span> / 5</i>
-        </progressbar>
         <div class="col-md-8">
             <!--           750x500 -->
             <img class="img-responsive" src="{{::recipeData.picture_path_big}}" alt="Food">
         </div>
 
         <div class="col-md-4">
+            <span class="flag-icon flag-icon-{{::recipeData.cuisine}}" style="margin-bottom: 2%"></span>
+                   <progressbar class="progress-striped active" animate="true" max="5" value="progressValue" type="danger"><i><span count-to="{{countTo}}" duration="1" count-from="{{countFrom}}"></span> / 5</i>
+        </progressbar>
             <h3>Directions</h3>
             <p>{{::recipeData.directions}}</p>
             <h3>Ingredients</h3>
@@ -28,7 +29,7 @@
                 <li data-ng-repeat="recipe in recipeData.ingredients">{{::recipe}}</li>
             </ul>
             <hr>
-            <rating-star-directive rank=recipeData.rank isReadOnly=readOnly></rating-star-directive>
+            <rating-star-directive rank=recipeData.rank rid=recipeData._id></rating-star-directive>
         </div>
     </div>
     <hr>

@@ -1,12 +1,13 @@
 <div class="stars">
-    <input class="star star-5" value="5" type="radio" ng-model="rank" />
+    <input class="star star-5" value="5" type="radio" ng-model="roundRank" />
     <label data-ng-click="starClicked(5)" class="star star-5" for="star-5"></label>
-    <input class="star star-4" value="4" type="radio" ng-model="rank" />
+    <input class="star star-4" value="4" type="radio" ng-model="roundRank" />
     <label data-ng-click="starClicked(4)" class="star star-4" for="star-4"></label>
-    <input class="star star-3" value="3" type="radio" ng-model="rank" />
+    <input class="star star-3" value="3" type="radio" ng-model="roundRank" />
     <label data-ng-click="starClicked(3)" class="star star-3" for="star-3"></label>
-    <input class="star star-2" value="2" type="radio" ng-model="rank" />
+    <input class="star star-2" value="2" type="radio" ng-model="roundRank" />
     <label data-ng-click="starClicked(2)" class="star star-2" for="star-2"></label>
-    <input class="star star-1" value="1" type="radio" ng-model="rank" />
+    <input class="star star-1" value="1" type="radio" ng-model="roundRank" />
     <label data-ng-click="starClicked(1)" class="star star-1" for="star-1"></label>
+    <h3>{{rank}}/5</h3>
 </div>

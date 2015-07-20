@@ -18,5 +18,5 @@ recApp.controller('menuCtrl', ['$scope', '$rootScope' , function ($scope, $rootS
         }
     ];
     
-    $rootScope.url = 'http://10.0.0.10:80/';
+    $rootScope.url = 'http://localhost:80/';
 }]);

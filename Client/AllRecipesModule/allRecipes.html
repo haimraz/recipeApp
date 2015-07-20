@@ -10,17 +10,17 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-4" style="padding-right:0px">
-            <input type="text" class="form-control" placeholder="Search" name="srch-term" />
+        <div class="col-xs-10" style="padding-right:0px">
+            <tags-input ng-model="tags"></tags-input>
         </div>
-        <div class="col-xs-8" style="padding-left:0px">
+        <div class="col-xs-2" style="padding-left:0px">
             <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i>
             </button>
         </div>
     </div>
     <hr>
     <div class="row">
-        <small-recipe-directive data-ng-repeat="recipe in recipes" recipe=recipe></small-recipe-directive>
+        <small-recipe-directive data-ng-repeat="recipe in recipes | filterByTags:tags" recipe=recipe></small-recipe-directive>
     </div>
     <hr>
 </div>

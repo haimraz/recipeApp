@@ -15,7 +15,7 @@ recApp.controller('allRecipesCtrl', ['$scope', 'allRecipesService', function ($s
 recApp.filter('filterByTags', [ '$filter', function ($filter) {
     return function (items, tags) {
         var filtered = [];
-        if (items && tags )
+        if (items && tags && tags.length > 0)
         {
             items.forEach(function (item) {
                  var matches = tags.some(function (tag) {

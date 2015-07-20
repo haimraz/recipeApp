@@ -1,4 +1,4 @@
-recApp.controller('menuCtrl', ['$scope', '$rootScope' , function ($scope, $rootScope) {
+recApp.controller('menuCtrl', ['$scope', '$rootScope', 'userService', function ($scope, $rootScope, userService) {
     $scope.menuItems = [
         {
             title: "About Us",
@@ -17,6 +17,19 @@ recApp.controller('menuCtrl', ['$scope', '$rootScope' , function ($scope, $rootS
             href: "#Login"
         }
     ];
-    
-    $rootScope.url = 'http://localhost:80/';
+
+//    userService.checkIfConnected().success(function (response) {
+//
+//    }).error(function (error) {
+//        console.log(error);
+//    });
+//
+//    if ()
+//
+//    {
+//        title: "Login",
+//        href: "#Login"
+//    }
+
+    $rootScope.url = 'http://10.0.0.10:8080/';
 }]);

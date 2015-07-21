@@ -14,7 +14,7 @@ recApp.factory('bigRecipeService', ['$http', '$rootScope', function ($http, $roo
 
     Service.doSend = function (message) {
         writeToScreen("SENT: " + message);
-        socket.emit('sendAdd', message);
+        socket.emit('sendAdd', "aaa");
         addMessage(data);
     }
 

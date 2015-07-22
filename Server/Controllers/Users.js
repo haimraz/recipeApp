@@ -54,7 +54,7 @@ exports.login = function (req, res) {
                 // in the session store to be retrieved
                 req.session.user = user;
                 console.log("Connected -> ", req.session.user);
-                Utils.generateResponse(req, res, 1, "");
+                Utils.generateResponse(req, res, 1, user.username);
             });
         }
         else {

@@ -30,9 +30,10 @@ exports.getCommentById = function (req, res) {
 
 exports.updateComment = function (req, res, fn) {
     var commentId = req.body.commentId;
+    var content = req.body.content;
     var query = {_id: commentId};
 
-    Comment.update(query, {content: req.body.content}, function (err) {
+    Comment.update(query, {content: content}, function (err) {
         if (err) {
             Utils.generateResponse(req, res, 0, err.message, fn);
         }

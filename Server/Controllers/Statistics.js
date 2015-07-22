@@ -11,21 +11,19 @@ var Utils = require('../Common/Utils');
 var Recipe = require('../Models/Recipe');
 var app = express();
 
-exports.getCountByCategory = function(req,res)
-{
+exports.getCountByCategory = function (req, res) {
     var agg = [
-        {$group: {
-            _id: "$category",
-
-            // SUCCESS!!! :D
-            total: {$sum: 1}
-
-        }},
-        {$match : req.body }
+        {$match: req.body},
+        {
+            $group: {
+                _id: "$category"
+                , total: {$sum: 1}
+            }
+        }
     ];
 
-    Recipe.aggregate(agg, function(err, recipes){
-        if (!err){
+    Recipe.aggregate(agg, function (err, recipes) {
+        if (!err) {
             res.end(JSON.stringify(recipes));
         }
         else {
@@ -33,3 +31,42 @@ exports.getCountByCategory = function(req,res)
         }
     });
 };
+
+exports.getAverageRateByCuisine = function (req, res) {
+    var agg = [
+        {$match: req.body},
+        {
+            $group: {
+                _id: "$cuisine"
+                , average: {$avg: '$rank'}
+            }
+        }
+    ];
+
+    Recipe.aggregate(agg, function (err, recipes) {
+        if (!err) {
+            res.end(JSON.stringify(recipes));
+        }
+        else {
+            Utils.generateResponse(req, res, 0, err);
+        }
+    });
+};
+
+//{
+//    $match: {
+//        _id: {
+//            $in: product.Comments
+//        }
+//    }
+//}
+//,
+//{
+//    $group: {
+//        _id: product._id, average
+//    :
+//        {
+//            $avg: '$Rating'
+//        }
+//    }
+//}

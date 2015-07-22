@@ -41,10 +41,16 @@ exports.hash = function (pwd, salt, fn) {
     }
 };
 
-exports.generateResponse = function (req, res, exitCode, message)
+exports.generateResponse = function (req, res, exitCode, message, fn)
 {
     var jsonResult = {"exit_code" : exitCode, "message" : message};
-    res.end(JSON.stringify(jsonResult));
+
+    if (fn) {
+        res = JSON.stringify(jsonResult);
+        fn(exitCode, res);
+    }
+    else
+        res.end(JSON.stringify(jsonResult));
 
     if (exitCode == 0)
     {

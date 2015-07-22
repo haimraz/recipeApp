@@ -19,7 +19,9 @@ exports.getCountByCategory = function(req,res)
 
             // SUCCESS!!! :D
             total: {$sum: 1}
-        }}
+
+        }},
+        {$match : req.body }
     ];
 
     Recipe.aggregate(agg, function(err, recipes){

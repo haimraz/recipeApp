@@ -8,7 +8,6 @@ var commentSchema = new Schema({
     ,content: String
     ,creation_date: Date
     ,creating_user: String
-    ,title: String
 });
 
 // the schema is useless so far

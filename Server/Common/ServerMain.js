@@ -173,9 +173,22 @@ io.sockets.on('connection', function (socket) {
         // echo globally (all clients) that a person has connected
     });
 
-// when the user disconnects.. perform this
+    // when the user disconnects.. perform this
+    socket.on('discon', function () {
+        console.log('Socket disconed', socket.username);
+        // remove the username from global usernames list
+        delete usernames[socket.username];
+
+        // update list of users in chat, client-side
+        //io.sockets.emit('desconnected', socket.username);
+        socket.username = null;
+        // echo globally that this client has left
+        //socket.broadcast.emit('updateComments', 'SERVER', socket.username + ' has disconnected');
+    });
+
+    // when the user disconnects.. perform this
     socket.on('disconnect', function () {
-        console.log('Socket disonnected', socket.username);
+        console.log('Socket disconnected', socket.username);
         // remove the username from global usernames list
         delete usernames[socket.username];
 

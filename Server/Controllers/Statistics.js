@@ -19,6 +19,7 @@ exports.getCountByCategory = function (req, res)
     var filter = {};
 
     // In case the body is not empty
+    console.log(req.body);
     if(req.body)
     {
         // Add rank filter if not empty

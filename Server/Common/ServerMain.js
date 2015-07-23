@@ -70,8 +70,8 @@ app.put('/Comments/updateComment/:id', commentController.updateComment);
 app.get('/Configs/getAllConfigs', configController.getAllConfigs);
 
 // Statistics controller
-app.get('/Statistics/getCountByCategory', statisticsController.getCountByCategory);
-app.get('/Statistics/getAverageRateByCuisine', statisticsController.getAverageRateByCuisine);
+app.put('/Statistics/getCountByCategory', statisticsController.getCountByCategory);
+app.put('/Statistics/getAverageRankByCuisine', statisticsController.getAverageRankByCuisine);
 
 function guid() {
     function s4() {

@@ -14,7 +14,7 @@ var User = require('../Models/User');
 var app = express();
 
 exports.getCommentById = function (req, res) {
-    console.log(req.params.id);
+    //console.log(req.params.id);
     var id = mongoose.Types.ObjectId(req.params.id);
     console.log(id);
     Comment.findById(id, function (err, commentFromDB) {

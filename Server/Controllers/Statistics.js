@@ -12,15 +12,27 @@ var Recipe = require('../Models/Recipe');
 var app = express();
 
 exports.getCountByCategory = function (req, res) {
-    var agg = [
-        {$match: req.body},
-        {
-            $group: {
-                _id: "$category"
-                , total: {$sum: 1}
-            }
+    var agg = [];
+    var filter = {};
+    if(req.body) {
+        if(req.body.rank)
+            filter.rank = { $gte : req.body.rank };
+        if(req.body.difficulty)
+            filter.difficulty = { $lte : req.body.difficulty };
+        if(req.body.ingredients)
+            filter.$text = {$search : req.body.ingredients };
+
+        console.log('filter: ', JSON.stringify(filter));
+        agg.push({$match: filter});
+    }
+
+    agg.push({
+        $group: {
+            _id: "$category"
+            , total: {$sum: 1}
         }
-    ];
+    });
+    console.log('agg', JSON.stringify(agg));
 
     Recipe.aggregate(agg, function (err, recipes) {
         if (!err) {
@@ -32,16 +44,27 @@ exports.getCountByCategory = function (req, res) {
     });
 };
 
-exports.getAverageRateByCuisine = function (req, res) {
-    var agg = [
-        {$match: req.body},
-        {
-            $group: {
-                _id: "$cuisine"
-                , average: {$avg: '$rank'}
-            }
+exports.getAverageRankByCuisine = function (req, res) {
+    var agg = [];
+    var filter = {};
+    if(req.body) {
+        if(req.body.rankers)
+            filter.rankers = { $gte : req.body.rankers };
+        if(req.body.category)
+            filter.category = req.body.category;
+        if(req.body.ingredients)
+            filter.$text = {$search : req.body.ingredients };
+
+        console.log('filter: ', JSON.stringify(filter));
+        agg.push({$match: filter});
+    }
+
+    agg.push({
+        $group: {
+            _id: "$cuisine"
+            , average: {$avg: '$rank'}
         }
-    ];
+    });
 
     Recipe.aggregate(agg, function (err, recipes) {
         if (!err) {

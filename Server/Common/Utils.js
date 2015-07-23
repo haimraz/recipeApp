@@ -58,3 +58,7 @@ exports.generateResponse = function (req, res, exitCode, message, fn)
         console.log(message);
     }
 };
+
+exports.currentUser = function (req) {
+    return req.session.user;
+};

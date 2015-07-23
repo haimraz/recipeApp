@@ -50,7 +50,7 @@ exports.getCountByCategory = function (req, res)
     {
         if (!err)
         {
-            res.end(JSON.stringify(recipes));
+            Utils.generateResponse(req, res, 1, recipes);
         }
         else
         {
@@ -96,7 +96,7 @@ exports.getAverageRankByCuisine = function (req, res)
     {
         if (!err)
         {
-            res.end(JSON.stringify(recipes));
+            Utils.generateResponse(req, res, 1, recipes);
         }
         else
         {

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="706ed836-43a4-43cc-b511-55dbce510a31" name="Default" comment="finished sockets, and one statistics function&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Common/ServerMain.js" afterPath="$PROJECT_DIR$/Server/Common/ServerMain.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Controllers/Statistics.js" afterPath="$PROJECT_DIR$/Server/Controllers/Statistics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="recipeApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +60,8 @@
       <file leaf-file-name="Statistics.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/Controllers/Statistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.8059804">
-              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.44714883">
+              <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -485,7 +483,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2104" extended-state="7" />
+    <frame x="-16" y="-16" width="3872" height="2104" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16226913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -831,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/Controllers/Statistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8059804">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.44714883">
+          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>

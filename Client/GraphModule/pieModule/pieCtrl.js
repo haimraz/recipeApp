@@ -2,10 +2,10 @@ recApp.controller('pieCtrl', ['$scope', 'pieService', function ($scope, pieServi
     $scope.sendToMongo = function () {
         var query = {};
         if ($scope.selected_rank != 1) {
-            query.rank = $scope.ranks[$scope.selected_rank - 1].name;
+            query.rank = parseInt($scope.ranks[$scope.selected_rank - 1].name);
         }
         if ($scope.selected_diff != 1) {
-            query.difficulty = $scope.difficulties[$scope.selected_diff - 1].name;
+            query.difficulty = parseInt($scope.difficulties[$scope.selected_diff - 1].name);
         }
         if ($scope.ingridiant != "") {
             query.ingredients = $scope.ingridiant;

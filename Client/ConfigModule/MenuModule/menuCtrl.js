@@ -17,7 +17,7 @@ recApp.controller('menuCtrl', ['$scope', '$rootScope', 'userService', function (
             href: "#Login"
         }
     ];
-    $rootScope.url = 'http://10.0.0.10:8080/';
+    $rootScope.url = 'http://169.254.92.81:8080/';
     socket.on('connect', function () {
         userService.checkIfConnected().success(function (response) {
             if (response.exit_code == 1) {

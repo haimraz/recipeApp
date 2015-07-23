@@ -1,6 +1,6 @@
 var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule', 'ratingStarModule', 'usernameModule', 'ui.bootstrap', 'countTo', 'ngTagsInput', 'd3App']);
 
-var socket = io.connect('http://10.0.0.10:8080');
+var socket = io.connect('http://169.254.92.81:8080');
 
 // configure our routes
 recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $compileProvider) {

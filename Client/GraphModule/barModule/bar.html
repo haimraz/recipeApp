@@ -15,9 +15,25 @@
         fill-opacity: .9;
     }
 </style>
-<div id="graphWrapper" class="container">
-    <label>
-        <input type="checkbox"> Sort values</label>
-    <button ng-click="clicked()">change</button>
-    <bar-chart-directive data=data></bar-chart-directive>
+<div class="container">
+    <div id="graphWrapper" class="col-md-8">
+        <label>
+            <input type="checkbox"> Sort values</label>
+        <bar-chart-directive data=data></bar-chart-directive>
+    </div>
+    <div class="col-md-4">
+        <br/>
+        <div class="form-group">
+            <label>Rankers:</label>
+            <input type="number" data-ng-model="Rankers" class="form-control input-lg">
+            <br/>
+            <label>Category:</label>
+            <bs-dropdown data-menu-type="button" select-val="selected_cat = selectedVal" preselected-item="selected_cat" data-dropdown-data="categories"></bs-dropdown>
+            <br/>
+            <label>Ingridiants:</label>
+            <input type="text" data-ng-model="ingridiant" class="form-control input-lg" placeholder="Ingridiants">
+            <br/>
+            <button type="button" class="btn btn-primary" ng-click="sendToMongo()">Send</button>
+        </div>
+    </div>
 </div>

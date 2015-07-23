@@ -1,26 +1,29 @@
 recApp.controller('pieCtrl', ['$scope', 'pieService', function ($scope, pieService) {
     $scope.sendToMongo = function () {
-            var query = {};
-            //if ()
-           // pieService.findInServer();
-    }
-
-    $scope.data = [
-        {
-            _id: "Appetizers",
-            total: "5"
-                },
-        {
-            _id: "Main course",
-            total: "7"
-                },
-        {
-            _id: "dudu",
-            total: "8"
+        var query = {};
+        if ($scope.selected_rank != 1) {
+            query.rank = $scope.ranks[$scope.selected_rank - 1].name;
+        }
+        if ($scope.selected_diff != 1) {
+            query.difficulty = $scope.difficulties[$scope.selected_diff - 1].name;
+        }
+        if ($scope.ingridiant != "") {
+            query.ingredients = $scope.ingridiant;
+        }
+        pieService.findInServer(query).success(function (response) {
+                if (response.exit_code == 1)
+                {
+                    $scope.data = response.message;
                 }
-            ];
+            })
+            .error(function (error) {
+                console.log(error);
+            });
+    }
+   
+   $scope.data = [];
     $scope.ranks = [
-         {
+        {
             id: 1,
             name: "Select:"
     },
@@ -63,5 +66,7 @@ recApp.controller('pieCtrl', ['$scope', 'pieService', function ($scope, pieServi
             name: "5"
     }];
     $scope.selected_diff = 1;
+    $scope.ingridiant = "";
+     $scope.sendToMongo();
 
 }]);

@@ -1,11 +1,15 @@
 recApp.controller('bigRecipeCtrl', ['$scope', 'bigRecipeService', '$routeParams', '$filter', function ($scope, bigRecipeService, $routeParams, $filter) {
     $scope.countFrom = 0;
-    
+    $scope.runOver =function(response)
+    {
+       // for (var i = 0; i < resonse.)
+        return response;
+    }
     $scope.commentBtn = "Add Comment";
     bigRecipeService.loadBigRecipePage($routeParams.recipeId, $scope)
         .success(function (response) {
             response.cuisine = ($filter('lowercase')(response.cuisine)).substring(0, 2);
-            $scope.recipeData = response;
+            $scope.recipeData = $scope.runOver(response);
             $scope.countTo = $scope.recipeData.difficulty;
             $scope.progressValue = $scope.recipeData.difficulty;
         })

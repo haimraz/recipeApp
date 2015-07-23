@@ -18,6 +18,10 @@ recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $
             templateUrl: 'AllRecipesModule/allRecipes.html',
             controller: 'allRecipesCtrl'
         })
+        .when('/AllRecipes/:filterTag?', {
+            templateUrl: 'AllRecipesModule/allRecipes.html',
+            controller: 'allRecipesCtrl'
+        })
         .when('/BigRecipe/:recipeId?', {
             templateUrl: 'BigRecipeModule/bigRecipe.html',
             controller: 'bigRecipeCtrl'

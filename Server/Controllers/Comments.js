@@ -28,134 +28,97 @@ exports.getCommentById = function (req, res) {
     });
 };
 
-exports.updateComment = function(req,res)
-{
-    var commentId = req.params.id;
-    var query = {_id : commentId};
+exports.updateComment = function (req, res, fn) {
+    var commentId = req.body.commentId;
+    var content = req.body.content;
+    var query = {_id: commentId};
 
-    Comment.update(query,{content : req.body.content, title: req.body.title}, function(err)
-    {
-        if (err)
-        {
-            Utils.generateResponse(req, res, 0, err.message);
+    Comment.update(query, {content: content}, function (err) {
+        if (err) {
+            Utils.generateResponse(req, res, 0, err.message, fn);
         }
-        else
-        {
-            Utils.generateResponse(req, res, 1, "");
+        else {
+            Utils.generateResponse(req, res, 1, req.body, fn);
         }
     })
 };
 
-exports.removeCommentFromRecipe = function(req,res)
-{
-    var recipeId = req.params.id;
-    var commentId = req.body.commentid;
-    Comment.remove({_id : commentId }, function(err){
+exports.removeCommentFromRecipe = function (req, res, fn) {
+    var recipeId = req.body.recipeId;
+    var commentId = req.body.commentId;
 
-        if (err)
-        {
-            Utils.generateResponse(req, res, 0, err.message);
+    Comment.remove({_id: commentId}, function (err) {
+        if (err) {
+            Utils.generateResponse(req, res, 0, err.message, fn);
         }
-        else
-        {
-            Recipe.findById(recipeId, function (err, recipe)
-            {
+        else {
+            Recipe.findById(recipeId, function (err, recipe) {
                 console.log(recipe);
-                if (err)
-                {
-                    Utils.generateResponse(req, res, 0, err.message);
+                if (err) {
+                    Utils.generateResponse(req, res, 0, err.message, fn);
                 }
-                else if (recipe)
-                {
+                else if (recipe) {
                     recipe.comments.pull(commentId);
                     console.log(recipe);
                     recipe.save(
-                        function(err)
-                        {
-                            if (err)
-                            {
-                                Utils.generateResponse(req, res, 0, err);
+                        function (err) {
+                            if (err) {
+                                Utils.generateResponse(req, res, 0, err, fn);
                             }
-                            else
-                            {
-                                Utils.generateResponse(req, res, 1, "");
+                            else {
+                                Utils.generateResponse(req, res, 1, req.body, fn);
                             }
                         });
                 }
-                else
-                {
-                    Utils.generateResponse(req, res, 0, "Recipe doesn't exist");
+                else {
+                    Utils.generateResponse(req, res, 0, "Recipe doesn't exist", fn);
                 }
             });
-            //Recipe.update(
-            //    {'_id': req.params.id},
-            //    { $pull: { "comments" : { id: commentId }}},
-            //    function(err)
-            //    {
-            //        if (err)
-            //        {
-            //            Utils.generateResponse(req, res, 0, err.message);
-            //        }
-            //        else
-            //        {
-            //            Utils.generateResponse(req, res, 1, "");
-            //        }
-            //    }
-            //);
-
-            Utils.generateResponse(req, res, 1, "");
+            //Utils.generateResponse(req, res, 1, "");
         }
     })
 };
 
-exports.addCommentToRecipe = function(req,res)
-{
-    var recipeId = req.params.id;
+exports.addCommentToRecipe = function (req, res, fn) {
+    var recipeId = req.body.recId;
 
     var newComment = new Comment({
         _id: GLOBAL.DB.Types.ObjectId(),
         content: req.body.content,
-        creation_date: new Date,
-        creating_user: req.body.creating_user,
-        title: req.body.title
+        creation_date: (req.body.date) ? req.body.date : new Date,
+        creating_user: req.body.creating_user
     });
 
     newComment.save(function (err) {
         if (!err) {
 
-            Recipe.findById(recipeId, function (err, recipe)
-            {
+            Recipe.findById(recipeId, function (err, recipe) {
                 console.log(recipe);
-                if (err)
-                {
-                    Utils.generateResponse(req, res, 0, err.message);
+                if (err) {
+                    Utils.generateResponse(req, res, 0, err.message, fn);
                 }
-                else if (recipe)
-                {
+                else if (recipe) {
                     recipe.comments.push(newComment);
                     console.log(recipe);
                     recipe.save(
-                        function(err)
-                        {
-                            if (err)
-                            {
-                                Utils.generateResponse(req, res, 0, err);
+                        function (err) {
+                            if (err) {
+                                console.log(err);
+                                Utils.generateResponse(req, res, 0, err.message, fn);
                             }
-                            else
-                            {
-                                Utils.generateResponse(req, res, 1, "");
+                            else {
+                                Utils.generateResponse(req, res, 1, newComment, fn);
                             }
                         });
                 }
-                else
-                {
-                    Utils.generateResponse(req, res, 0, "Recipe doesn't exist");
+                else {
+                    Utils.generateResponse(req, res, 0, "Recipe doesn't exist", fn);
                 }
             });
         }
         else {
-            Utils.generateResponse(req, res, 0, err.message);
             console.log(err);
+            Utils.generateResponse(req, res, 0, err.message, fn);
         }
     });
 };

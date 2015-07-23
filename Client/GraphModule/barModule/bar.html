@@ -15,7 +15,6 @@
         fill-opacity: .9;
     }
 </style>
-<div class="container">
     <div id="graphWrapper" class="col-md-8">
         <label>
             <input type="checkbox"> Sort values</label>
@@ -25,7 +24,7 @@
         <br/>
         <div class="form-group">
             <label>Rankers:</label>
-            <input type="number" data-ng-model="Rankers" class="form-control input-lg">
+            <input type="number" data-ng-model="rankers" class="form-control input-lg">
             <br/>
             <label>Category:</label>
             <bs-dropdown data-menu-type="button" select-val="selected_cat = selectedVal" preselected-item="selected_cat" data-dropdown-data="categories"></bs-dropdown>
@@ -36,4 +35,3 @@
             <button type="button" class="btn btn-primary" ng-click="sendToMongo()">Send</button>
         </div>
     </div>
-</div>

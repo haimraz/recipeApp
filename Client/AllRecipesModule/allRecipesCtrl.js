@@ -1,4 +1,4 @@
-recApp.controller('allRecipesCtrl', ['$scope', 'allRecipesService', function ($scope, allRecipesService) {
+recApp.controller('allRecipesCtrl', ['$scope', 'allRecipesService', '$routeParams', function ($scope, allRecipesService, $routeParams) {
 
     allRecipesService.getAllRecipes()
         .success(function (response) {
@@ -8,6 +8,12 @@ recApp.controller('allRecipesCtrl', ['$scope', 'allRecipesService', function ($s
             console.log(error);
             $scope.recipes = [];
         });
+    
+    if ($routeParams.filterTag)
+    {
+        $scope.tags = [];
+        $scope.tags.push($routeParams.filterTag);
+    }
 
 }]);
 

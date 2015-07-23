@@ -1,42 +1,46 @@
-    <div class="container">
+<div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">About Us
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">About Us
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a>
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Content Row -->
-        <div class="row">
-            <!-- Map Column -->
-            <div class="col-md-8">
-                <div id="map-canvas" style="height: 500px; margin: 0; padding: 0;"></div>
-            </div>
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <h3>Contact Details</h3>
-                <p>
-                    {{::config.address}}<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">P</abbr>: {{::config.telephone}}</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">E</abbr>: <a href="mailto:{{::config.email}}">{{::config.email}}</a>
-                </p>
-                <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">H</abbr>: Monday - Friday: {{::config.supportHours}}</p>
-                <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-                        <a href="{{::config.fbPage}}"><i class="fa fa-facebook-square fa-2x"></i></a>
-                    </li>
-                </ul>
-            </div>
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a>
+                </li>
+            </ol>
         </div>
     </div>
+    <!-- /.row -->
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Map Column -->
+        <div class="col-md-8">
+            <div id="map-canvas" style="height: 500px; margin: 0; padding: 0;"></div>
+        </div>
+        <!-- Contact Details Column -->
+        <div class="col-md-4">
+            <h3>Contact Details</h3>
+            <p>
+                {{::config.address}}
+                <br>
+            </p>
+            <p><i class="fa fa-phone"></i>
+                <abbr title="Phone">P</abbr>: {{::config.telephone}}</p>
+            <p><i class="fa fa-envelope-o"></i>
+                <abbr title="Email">E</abbr>: <a href="mailto:{{::config.email}}">{{::config.email}}</a>
+            </p>
+            <p><i class="fa fa-clock-o"></i>
+                <abbr title="Hours">H</abbr>: Monday - Friday: {{::config.supportHours}}</p>
+            <ul class="list-unstyled list-inline list-social-icons">
+                <li>
+                    <a href="{{::config.fbPage}}"><i class="fa fa-facebook-square fa-2x"></i></a>
+                </li>
+            </ul>
+            <video width="320" height="240" controls>
+                <source src="C:\gitProjects\recipeApp\Client\Vendor\vidio\Street Food Around The World.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>

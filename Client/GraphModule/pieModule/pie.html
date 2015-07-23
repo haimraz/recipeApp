@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div id="graphWrapper" class="col-md-8">
+            <pie-chart-directive data=data></pie-chart-directive>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <bs-dropdown data-menu-type="button" select-val="selected_rank = selectedVal" preselected-item="selected_rank" data-dropdown-data="difficulties"></bs-dropdown>
+                <bs-dropdown data-menu-type="button" select-val="selected_diff = selectedVal" preselected-item="selected_diff" data-dropdown-data="ranks"></bs-dropdown>
+                <input type="text" data-ng-model="ingridiant" class="form-control input-lg" placeholder="Ingridiants">
+                <button type="button" class="btn btn-primary" ng-click="sendToMongo()">Send</button>
+            </div>
+        </div>
+    </div>
+</div>

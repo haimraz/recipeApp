@@ -5,8 +5,8 @@ recApp.controller('logoutCtrl', ['$scope', 'logoutService', '$location', 'userSe
             logoutService.sendLogout()
                 .success(function (response) {
                     if (response.exit_code == 1) {
-                        $scope.$parent.menuItems[3].href = "#Login";
-                        $scope.$parent.menuItems[3].title = "Login";
+                        $scope.$parent.menuItems[4].href = "#Login";
+                        $scope.$parent.menuItems[4].title = "Login";
                         //socket.io.disconnect();
                          socket.emit('discon');
                         $location.path('/Login');

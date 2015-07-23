@@ -5,7 +5,6 @@ var Utils = require('../Common/Utils');
 // Globals
 GLOBAL.DB = require('mongoose');
 GLOBAL.DB.connect('mongodb://bbb:bbb@ds047722.mongolab.com:47722/recipedb');
-//GLOBAL.DB.socket = socket;
 
 var express = require('express')
     , app = express()
@@ -22,9 +21,6 @@ var statisticsController = require('./../Controllers/Statistics');
 
 
 // Config
-
-//app.set('view engine', 'jade');
-//app.set('views', __dirname + '/views');
 
 // middleware
 
@@ -88,20 +84,10 @@ function guid() {
 
 var usernames = {};
 
-//io.sockets.on('connect', function(client) {
-//    clients.push(client);
-//
-//    client.on('disconnect', function() {
-//        clients.splice(clients.indexOf(client), 1);
-//    });
-//});
-
 io.sockets.on('connection', function (socket) {
 
     // when the client emits 'sendchat', this listens and executes
     socket.on('sendAdd', function (req) {
-      //  console.log(JSON.stringify(socket));
-      //  console.log(req.session.user);
         if (socket.username) {
             req.body = {
                 recId: req.recId,
@@ -169,7 +155,6 @@ io.sockets.on('connection', function (socket) {
         // add the client's username to the global list
         usernames[username] = username;
         // echo to client they've connected
-        //socket.emit('updatechat', 'SERVER', 'you have connected');
         // echo globally (all clients) that a person has connected
     });
 
@@ -193,15 +178,11 @@ io.sockets.on('connection', function (socket) {
         delete usernames[socket.username];
 
         // update list of users in chat, client-side
-        //io.sockets.emit('desconnected', socket.username);
         socket.username = null;
         // echo globally that this client has left
-        //socket.broadcast.emit('updateComments', 'SERVER', socket.username + ' has disconnected');
     });
 });
 
 // posts
-//app.listen(80);
-//app.listen(port);
 server.listen(port);
 console.log('Express started on port', port);

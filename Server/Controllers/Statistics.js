@@ -11,54 +11,79 @@ var Utils = require('../Common/Utils');
 var Recipe = require('../Models/Recipe');
 var app = express();
 
-exports.getCountByCategory = function (req, res) {
+exports.getCountByCategory = function (req, res)
+{
     var agg = [];
+
+    // Building the query filters with the users parameters
     var filter = {};
-    if(req.body) {
+
+    // In case the body is not empty
+    if(req.body)
+    {
+        // Add rank filter if not empty
         if(req.body.rank)
             filter.rank = { $gte : req.body.rank };
+
+        // Add difficulty filter if not empty
         if(req.body.difficulty)
             filter.difficulty = { $lte : req.body.difficulty };
+
+        // Add ingredients filter if not empty
         if(req.body.ingredients)
             filter.$text = {$search : req.body.ingredients };
 
-        console.log('filter: ', JSON.stringify(filter));
+        // Add the filters to the aggregation array
         agg.push({$match: filter});
     }
 
+    // Add the group field to aggregation array
     agg.push({
         $group: {
             _id: "$category"
             , total: {$sum: 1}
         }
     });
-    console.log('agg', JSON.stringify(agg));
 
-    Recipe.aggregate(agg, function (err, recipes) {
-        if (!err) {
+    // Aggregate
+    Recipe.aggregate(agg, function (err, recipes)
+    {
+        if (!err)
+        {
             res.end(JSON.stringify(recipes));
         }
-        else {
+        else
+        {
             Utils.generateResponse(req, res, 0, err);
         }
     });
 };
 
-exports.getAverageRankByCuisine = function (req, res) {
+exports.getAverageRankByCuisine = function (req, res)
+{
     var agg = [];
     var filter = {};
-    if(req.body) {
+
+    // In case the body is not empty
+    if(req.body)
+    {
+        // Add rankers filter if not empty
         if(req.body.rankers)
             filter.rankers = { $gte : req.body.rankers };
+
+        // Add category filter if not empty
         if(req.body.category)
             filter.category = req.body.category;
+
+        // Add ingredients filter if not empty
         if(req.body.ingredients)
             filter.$text = {$search : req.body.ingredients };
 
-        console.log('filter: ', JSON.stringify(filter));
+        // Add the filters to aggregation array
         agg.push({$match: filter});
     }
 
+    // Add the group field to aggregation array
     agg.push({
         $group: {
             _id: "$cuisine"
@@ -66,30 +91,16 @@ exports.getAverageRankByCuisine = function (req, res) {
         }
     });
 
-    Recipe.aggregate(agg, function (err, recipes) {
-        if (!err) {
+    // Aggregate
+    Recipe.aggregate(agg, function (err, recipes)
+    {
+        if (!err)
+        {
             res.end(JSON.stringify(recipes));
         }
-        else {
+        else
+        {
             Utils.generateResponse(req, res, 0, err);
         }
     });
 };
-
-//{
-//    $match: {
-//        _id: {
-//            $in: product.Comments
-//        }
-//    }
-//}
-//,
-//{
-//    $group: {
-//        _id: product._id, average
-//    :
-//        {
-//            $avg: '$Rating'
-//        }
-//    }
-//}

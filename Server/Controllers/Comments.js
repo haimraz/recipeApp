@@ -34,51 +34,57 @@ exports.updateComment = function (req, res, fn) {
     var user = req.body.user;
     var query = {_id: commentId, creating_user : user};
 
-    Comment.update(query, {content: content}, function (err) {
-        if (err) {
-            Utils.generateResponse(req, res, 0, err.message, fn);
-        }
-        else {
-            Utils.generateResponse(req, res, 1, req.body, fn);
-        }
-    })
+    Comment.findOne(query, function (err, comment) {
+        if (comment)
+            Comment.update({_id: commentId}, {content: content}, function (err) {
+                if (err) {
+                    Utils.generateResponse(req, res, 0, err.message, fn);
+                }
+                else {
+                    Utils.generateResponse(req, res, 1, req.body, fn);
+                }
+            })
+    });
 };
 
 exports.removeCommentFromRecipe = function (req, res, fn) {
     var recipeId = req.body.recipeId;
     var commentId = req.body.commentId;
     var user = req.body.user;
-    
-    Comment.remove({_id: commentId, creating_user : user}, function (err) {
-        if (err) {
-            Utils.generateResponse(req, res, 0, err.message, fn);
-        }
-        else {
-            Recipe.findById(recipeId, function (err, recipe) {
-                console.log(recipe);
-                if (err) {
-                    Utils.generateResponse(req, res, 0, err.message, fn);
-                }
-                else if (recipe) {
-                    recipe.comments.pull(commentId);
+
+    Comment.findOne({_id: commentId, creating_user : user}, function (err, comment) {
+    if (comment)
+        Comment.remove({_id: commentId}, function (err) {
+            if (err) {
+                Utils.generateResponse(req, res, 0, err.message, fn);
+            }
+            else {
+                Recipe.findById(recipeId, function (err, recipe) {
                     console.log(recipe);
-                    recipe.save(
-                        function (err) {
-                            if (err) {
-                                Utils.generateResponse(req, res, 0, err, fn);
-                            }
-                            else {
-                                Utils.generateResponse(req, res, 1, req.body, fn);
-                            }
-                        });
-                }
-                else {
-                    Utils.generateResponse(req, res, 0, "Recipe doesn't exist", fn);
-                }
-            });
-            //Utils.generateResponse(req, res, 1, "");
-        }
-    })
+                    if (err) {
+                        Utils.generateResponse(req, res, 0, err.message, fn);
+                    }
+                    else if (recipe) {
+                        recipe.comments.pull(commentId);
+                        console.log(recipe);
+                        recipe.save(
+                            function (err) {
+                                if (err) {
+                                    Utils.generateResponse(req, res, 0, err, fn);
+                                }
+                                else {
+                                    Utils.generateResponse(req, res, 1, req.body, fn);
+                                }
+                            });
+                    }
+                    else {
+                        Utils.generateResponse(req, res, 0, "Recipe doesn't exist", fn);
+                    }
+                });
+                //Utils.generateResponse(req, res, 1, "");
+            }
+        })
+    });
 };
 
 exports.addCommentToRecipe = function (req, res, fn) {

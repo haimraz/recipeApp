@@ -31,7 +31,8 @@ exports.getCommentById = function (req, res) {
 exports.updateComment = function (req, res, fn) {
     var commentId = req.body.commentId;
     var content = req.body.content;
-    var query = {_id: commentId};
+    var user = req.body.user;
+    var query = {_id: commentId, creating_user : user};
 
     Comment.update(query, {content: content}, function (err) {
         if (err) {
@@ -46,8 +47,9 @@ exports.updateComment = function (req, res, fn) {
 exports.removeCommentFromRecipe = function (req, res, fn) {
     var recipeId = req.body.recipeId;
     var commentId = req.body.commentId;
-
-    Comment.remove({_id: commentId}, function (err) {
+    var user = req.body.user;
+    
+    Comment.remove({_id: commentId, creating_user : user}, function (err) {
         if (err) {
             Utils.generateResponse(req, res, 0, err.message, fn);
         }

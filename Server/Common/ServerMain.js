@@ -113,6 +113,7 @@ io.sockets.on('connection', function (socket) {
         console.log(socket.username);
         if (socket.username) {
             req.body = {
+                user: socket.username,
                 commentId: req.commentId,
                 content: req.content
             };
@@ -133,6 +134,7 @@ io.sockets.on('connection', function (socket) {
         console.log(socket.username);
         if (socket.username) {
             req.body = {
+                user: socket.username,
                 commentId: req.commentId,
                 recipeId: req.recipeId
             };

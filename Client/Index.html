@@ -31,12 +31,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="Vendor/images/logo.png"/></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li data-ng-repeat="item in menuItems">
                         <a href="{{item.href}}">{{item.title}}</a>
+                    </li>
+                    <li>
+                        <a style="padding-top:0px" class="navbar-brand" href="#"><img alt="logo" src="Vendor/images/logo.png" width="50" height="50" class="img-responsive" />
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -49,6 +52,8 @@
     <script src="Vendor/js/alertify.min.js"></script>
     <script src="Vendor/js/angular-route.js"></script>
     <script src="Vendor/js/angular-tooltips.min.js"></script>
+    <script src="Vendor/js/d3.min.js"></script>
+    <script src="Vendor/js/reusable_chart.js"></script>
     <script src="Vendor/js/socket.io.js"></script>
     <script src="Vendor/js/ui-bootstrap-tpls-0.12.0.min.js"></script>
     <script src="Vendor/js/angular-count-to.js"></script>
@@ -57,6 +62,7 @@
     <script src="LocationModule/location.js"></script>
     <script src="RegisterModule/usernameModule/usernameDirective.js"></script>
     <script src="SmallRecipeModule/smallRecipeDirective.js"></script>
+    <script src="GraphModule/d3Module/d3.js"></script>
     <script src="ConfigModule/config.js"></script>
     <script src="UserModule/userFac.js"></script>
     <script src="ConfigModule/MenuModule/menuCtrl.js"></script>
@@ -74,6 +80,8 @@
     <script src="AboutUsModule/aboutFac.js"></script>
     <script src="LogoutModule/logoutFac.js"></script>
     <script src="LogoutModule/logoutCtrl.js"></script>
+    <script src="GraphModule/graphFac.js"></script>
+    <script src="GraphModule/graphCtrl.js"></script>
 </body>
 
 </html>

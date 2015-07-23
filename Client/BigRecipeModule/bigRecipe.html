@@ -19,9 +19,9 @@
         </div>
 
         <div class="col-md-4">
-            <span class="flag-icon flag-icon-{{::recipeData.cuisine}}" style="margin-bottom: 2%"></span>
-                   <progressbar class="progress-striped active" animate="true" max="5" value="progressValue" type="danger"><i><span count-to="{{countTo}}" duration="1" count-from="{{countFrom}}"></span> / 5</i>
-        </progressbar>
+            <span class="flag-icon flag-icon-{{recipeData.cuisine}}" style="margin-bottom: 2%"></span>
+            <progressbar class="progress-striped active" animate="true" max="5" value="progressValue" type="danger"><i><span count-to="{{countTo}}" duration="1" count-from="{{countFrom}}"></span> / 5</i>
+            </progressbar>
             <h3>Directions</h3>
             <p>{{::recipeData.directions}}</p>
             <h3>Ingredients</h3>
@@ -36,17 +36,28 @@
     <div class="col-lg-12 col-sm-12 text-left">
         <div class="well">
             <h4>What is on your mind?</h4>
-            <div class="input-group" data-ng-if="!readOnly">
-                <input type="text" id="userComment" data-ng-model="currMsg.content" class="form-control input-sm chat-input" placeholder="Write your message here..." />
+            <div class="input-group">
+                <input type="text" id="userComment" data-ng-model="currMsg" class="form-control input-sm chat-input" placeholder="Write your message here..." />
                 <span class="input-group-btn" ng-click="addComment()">     
-            <a href="" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"></span> Add Comment</a>
+            <a href="" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"></span> {{commentBtn}}</a>
                 </span>
             </div>
             <hr>
             <ul id="sortable" class="list-unstyled ui-sortable" ng-repeat="message in recipeData.comments">
-                <strong class="pull-left primary-font">{{message.name}}</strong>
+                <!--
+                <button class="close" ng-show="$scope.$parent.userName != message.creating_user"><i ng-click="delComment($index)" class="fa fa-times"></i>
+                </button>
+                <button class="close" ng-show="$scope.$parent.userName != message.creating_user"><i ng-click="editComment($index)" class="fa fa-pencil-square-o"></i>
+                </button>
+-->
+                <button class="close"><i ng-click="delComment($index)" class="fa fa-times"></i>
+                </button>
+                <button class="close"><i ng-click="editComment($index)" class="fa fa-pencil-square-o"></i>
+                </button>
+                <br/>
+                <strong class="pull-left primary-font">{{message.creating_user}}</strong>
                 <small class="pull-right text-muted">
-           <span class="glyphicon glyphicon-time"></span>{{message.time}} mins ago</small>
+           <span class="glyphicon glyphicon-time"></span>{{message.creation_date}} mins ago</small>
                 <br>
                 <li class="ui-state-default">{{message.content}}</li>
                 <hr>

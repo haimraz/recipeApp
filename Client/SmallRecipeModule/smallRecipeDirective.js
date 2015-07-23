@@ -1,5 +1,5 @@
 angular.module('smallRecipeModule', []).
-directive('smallRecipeDirective', function () {
+directive('smallRecipeDirective', [ '$filter', function ($filter)  {
     return {
         restrict: 'E',
         replace: false,
@@ -8,8 +8,8 @@ directive('smallRecipeDirective', function () {
         },
         link: function (scope, elm, attrs) 
         {
-            console.log(scope.recipe);
+            scope.cuisine = ($filter('lowercase')(scope.recipe.cuisine)).substring(0, 2);
         },
         templateUrl: "SmallRecipeModule/smallRecipe.html"
     }
-});
+}]);

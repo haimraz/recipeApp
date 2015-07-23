@@ -1,6 +1,6 @@
-var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule', 'ratingStarModule', 'usernameModule', 'ui.bootstrap', 'countTo', 'ngTagsInput']);
-var user = {};
-user.name = "Haim" // TODO take from session
+var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule', 'ratingStarModule', 'usernameModule', 'ui.bootstrap', 'countTo', 'ngTagsInput', 'd3App']);
+
+var socket = io.connect('http://10.0.0.10:8080');
 
 // configure our routes
 recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $compileProvider) {
@@ -23,7 +23,7 @@ recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $
             controller: 'bigRecipeCtrl'
         })
         .when('/Graphs', {
-            templateUrl: '../GraphModule/graph.html',
+            templateUrl: 'GraphModule/graph.html',
             controller: 'graphCtrl'
         })
         .when('/Login', {

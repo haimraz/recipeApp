@@ -1,6 +1,6 @@
 var recApp = angular.module('recApp', ['ngRoute', '720kb.tooltips', 'locationModule', 'smallRecipeModule', 'ratingStarModule', 'usernameModule', 'ui.bootstrap', 'countTo', 'ngTagsInput', 'd3App']);
 
-var socket = io.connect('http://169.254.92.81:8080');
+var socket = io.connect('http://192.168.43.176:8080');
 
 // configure our routes
 recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $compileProvider) {
@@ -22,9 +22,13 @@ recApp.config(['$routeProvider', '$compileProvider', function ($routeProvider, $
             templateUrl: 'BigRecipeModule/bigRecipe.html',
             controller: 'bigRecipeCtrl'
         })
-        .when('/Graphs', {
-            templateUrl: 'GraphModule/graph.html',
-            controller: 'graphCtrl'
+        .when('/Pie', {
+            templateUrl: 'GraphModule/pieModule/pie.html',
+            controller: 'pieCtrl'
+        })
+        .when('/Bar', {
+            templateUrl: 'GraphModule/barModule/bar.html',
+            controller: 'barCtrl'
         })
         .when('/Login', {
             templateUrl: 'LoginModule/login.html',

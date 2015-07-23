@@ -8,8 +8,8 @@ recApp.controller('loginCtrl', ['$scope', 'loginService', '$location', function 
             loginService.sendLogin($scope.user)
                 .success(function (response) {
                     if (response.exit_code == 1) {
-                        $scope.$parent.menuItems[3].href = "#Logout";
-                        $scope.$parent.menuItems[3].title = "Logout";
+                        $scope.$parent.menuItems[4].href = "#Logout";
+                        $scope.$parent.menuItems[4].title = "Logout";
                         socket.emit('adduser', response.message);
                         $location.path('/');
                         alertify.notify('Login Succeeded', 'success', 5);

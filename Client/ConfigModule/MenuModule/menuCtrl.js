@@ -9,15 +9,19 @@ recApp.controller('menuCtrl', ['$scope', '$rootScope', 'userService', function (
             href: "#AllRecipes"
         },
         {
-            title: "Statistics",
-            href: "#Graphs"
+            title: "Pie Statistics",
+            href: "#Pie"
+        },
+        {
+            title: "Bar Statistics",
+            href: "#Bar"
         },
         {
             title: "Login",
             href: "#Login"
         }
     ];
-    $rootScope.url = 'http://169.254.92.81:8080/';
+    $rootScope.url = 'http://192.168.43.176:8080/';
     socket.on('connect', function () {
         userService.checkIfConnected().success(function (response) {
             if (response.exit_code == 1) {
@@ -30,11 +34,11 @@ recApp.controller('menuCtrl', ['$scope', '$rootScope', 'userService', function (
     userService.checkIfConnected().success(function (response) {
         if (response.exit_code == 1) {
             $scope.userName = response.message;
-            $scope.menuItems[3].href = "#Logout";
-            $scope.menuItems[3].title = "Logout";
+            $scope.menuItems[4].href = "#Logout";
+            $scope.menuItems[4].title = "Logout";
         } else {
-            $scope.menuItems[3].href = "#Login";
-            $scope.menuItems[3].title = "Login";
+            $scope.menuItems[4].href = "#Login";
+            $scope.menuItems[4].title = "Login";
         }
     }).error(function (error) {
 

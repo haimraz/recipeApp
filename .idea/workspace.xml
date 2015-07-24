@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="706ed836-43a4-43cc-b511-55dbce510a31" name="Default" comment="finished sockets, and one statistics function&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Common/ServerMain.js" afterPath="$PROJECT_DIR$/Server/Common/ServerMain.js" />
-    </list>
+    <list default="true" id="706ed836-43a4-43cc-b511-55dbce510a31" name="Default" comment="finished sockets, and one statistics function&#10;" />
     <ignored path="recipeApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

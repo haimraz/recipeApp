@@ -14,7 +14,6 @@
     </div>
     <div class="row">
         <div class="col-md-8">
-            <!--           750x500 -->
             <img class="img-responsive" src="../{{::recipeData.picture_path_big}}" alt="Food">
         </div>
 
@@ -44,15 +43,9 @@
             </div>
             <hr>
             <ul id="sortable" class="list-unstyled ui-sortable" ng-repeat="message in recipeData.comments">
-                <!--
-                <button class="close" ng-show="$scope.$parent.userName != message.creating_user"><i ng-click="delComment($index)" class="fa fa-times"></i>
+                <button class="close" ><i ng-show="$scope.$parent.user == message.creating_user" ng-click="delComment($index)" class="fa fa-times"></i>
                 </button>
-                <button class="close" ng-show="$scope.$parent.userName != message.creating_user"><i ng-click="editComment($index)" class="fa fa-pencil-square-o"></i>
-                </button>
--->
-                <button class="close"><i ng-click="delComment($index)" class="fa fa-times"></i>
-                </button>
-                <button class="close"><i ng-click="editComment($index)" class="fa fa-pencil-square-o"></i>
+                <button class="close"><i ng-show="$scope.$parent.user == message.creating_user" ng-click="editComment($index)" class="fa fa-pencil-square-o"></i>
                 </button>
                 <br/>
                 <strong class="pull-left primary-font">{{message.creating_user}}</strong>

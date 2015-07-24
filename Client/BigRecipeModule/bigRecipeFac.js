@@ -62,11 +62,13 @@ recApp.factory('bigRecipeService', ['$http', '$rootScope', 'userService', functi
                 Service.scope.recipeData.comments[i].content = data.message.content;
             }
         }
-        Service.scope.commentBtn = "Add Comment";
+
         Service.scope.$apply();
     }
 
     function addMessage(data) {
+        var msgDate = new Date(data.message.creation_date);
+        data.message.creation_date = msgDate.format("dd-m-yy");
         Service.scope.recipeData.comments.push(data.message);
         Service.scope.$apply();
     }

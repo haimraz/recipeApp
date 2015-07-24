@@ -1,8 +1,11 @@
-recApp.controller('bigRecipeCtrl', ['$scope', 'bigRecipeService', '$routeParams', '$filter', function ($scope, bigRecipeService, $routeParams, $filter) {
+recApp.controller('bigRecipeCtrl', ['$scope', 'bigRecipeService', '$routeParams', '$filter', '$rootScope', function ($scope, bigRecipeService, $routeParams, $filter, $rootScope) {
     $scope.countFrom = 0;
-    $scope.runOver =function(response)
-    {
-       // for (var i = 0; i < resonse.)
+    $scope.runOver = function (response) {
+         for (var i = 0; i < response.comments.length; i++)
+         {
+             var msgDate = new Date(response.comments[i].creation_date);
+             response.comments[i].creation_date = msgDate.format("dd-m-yy");
+         }
         return response;
     }
     $scope.commentBtn = "Add Comment";
@@ -32,6 +35,7 @@ recApp.controller('bigRecipeCtrl', ['$scope', 'bigRecipeService', '$routeParams'
                 content: angular.copy($scope.currMsg)
             };
             bigRecipeService.doEdit(req);
+            $scope.commentBtn = "Add Comment";
             $scope.currMsg = "";
         }
     }

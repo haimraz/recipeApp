@@ -22,8 +22,10 @@ recApp.controller('menuCtrl', ['$scope', '$rootScope', 'userService', function (
         }
     ];
     $rootScope.url = 'http://192.168.43.176:8080/';
+    $rootScope.user = "";
     socket.on('connect', function () {
         userService.checkIfConnected().success(function (response) {
+            $scope.user = response.message;
             if (response.exit_code == 1) {
                 socket.emit('adduser', response.message);
             }
@@ -33,7 +35,7 @@ recApp.controller('menuCtrl', ['$scope', '$rootScope', 'userService', function (
     });
     userService.checkIfConnected().success(function (response) {
         if (response.exit_code == 1) {
-            $scope.userName = response.message;
+            $scope.user = response.message;
             $scope.menuItems[4].href = "#Logout";
             $scope.menuItems[4].title = "Logout";
         } else {

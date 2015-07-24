@@ -169,8 +169,6 @@ io.sockets.on('connection', function (socket) {
         // update list of users in chat, client-side
         //io.sockets.emit('desconnected', socket.username);
         socket.username = null;
-        // echo globally that this client has left
-        //socket.broadcast.emit('updateComments', 'SERVER', socket.username + ' has disconnected');
     });
 
     // when the user disconnects.. perform this

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="706ed836-43a4-43cc-b511-55dbce510a31" name="Default" comment="finished sockets, and one statistics function&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Controllers/Comments.js" afterPath="$PROJECT_DIR$/Server/Controllers/Comments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Common/ServerMain.js" afterPath="$PROJECT_DIR$/Server/Common/ServerMain.js" />
-    </list>
+    <list default="true" id="706ed836-43a4-43cc-b511-55dbce510a31" name="Default" comment="finished sockets, and one statistics function&#10;" />
     <ignored path="recipeApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +24,8 @@
       <file leaf-file-name="Comments.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/Controllers/Comments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36856747">
-              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.8108484">
+              <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -820,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/Controllers/Comments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36856747">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.8108484">
+          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>

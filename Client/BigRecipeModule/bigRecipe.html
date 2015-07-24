@@ -43,13 +43,12 @@
             </div>
             <hr>
             <ul id="sortable" class="list-unstyled ui-sortable" ng-repeat="message in recipeData.comments">
-                <button class="close" ><i ng-show="$scope.$parent.user == message.creating_user" ng-click="delComment($index)" class="fa fa-times"></i>
+                <button class="close" ><i ng-show={{message.isShow}} ng-click="delComment($index)" class="fa fa-times"></i>
                 </button>
-                <button class="close"><i ng-show="$scope.$parent.user == message.creating_user" ng-click="editComment($index)" class="fa fa-pencil-square-o"></i>
+                <button class="close"><i ng-show={{message.isShow}} ng-click="editComment($index)" class="fa fa-pencil-square-o"></i>
                 </button>
-                <br/>
                 <strong class="pull-left primary-font">{{message.creating_user}}</strong>
-                <small class="pull-right text-muted">
+                <small class="pull-right text-muted"  style="  margin-right: 1%;">
            <span class="glyphicon glyphicon-time"></span> {{message.creation_date}}</small>
                 <br>
                 <li class="ui-state-default">{{message.content}}</li>

@@ -10,6 +10,7 @@ recApp.controller('loginCtrl', ['$scope', 'loginService', '$location', function 
                     if (response.exit_code == 1) {
                         $scope.$parent.menuItems[4].href = "#Logout";
                         $scope.$parent.menuItems[4].title = "Logout";
+                        $scope.$parent.user = response.message;
                         socket.emit('adduser', response.message);
                         $location.path('/');
                         alertify.notify('Login Succeeded', 'success', 5);

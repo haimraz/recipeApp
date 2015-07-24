@@ -69,13 +69,14 @@ recApp.factory('bigRecipeService', ['$http', '$rootScope', 'userService', functi
     function addMessage(data) {
         var msgDate = new Date(data.message.creation_date);
         data.message.creation_date = msgDate.format("dd-m-yy");
+        data.message.isShow = (Service.scope.$parent.user == data.message.creating_user);
         Service.scope.recipeData.comments.push(data.message);
         Service.scope.$apply();
     }
 
     // TODO function for test
     function writeToScreen(message) {
-        console.log(message);
+      //  console.log(message);
     }
 
     return Service;

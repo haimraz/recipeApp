@@ -5,6 +5,7 @@ recApp.controller('bigRecipeCtrl', ['$scope', 'bigRecipeService', '$routeParams'
          {
              var msgDate = new Date(response.comments[i].creation_date);
              response.comments[i].creation_date = msgDate.format("dd-m-yy");
+             response.comments[i].isShow = ($scope.$parent.user == response.comments[i].creating_user);
          }
         return response;
     }
